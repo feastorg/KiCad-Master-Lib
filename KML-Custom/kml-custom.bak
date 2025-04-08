@@ -1618,6 +1618,230 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "DF2S6.8MFS_L3M"
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D5"
+			(at 1.016 4.318 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DF2S6.8MFS_L3M"
+			(at -8.382 -6.604 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SOD-923_TOS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "DF2S6.8MFS_L3M"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "DF2S6.8MFS,L3M"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOD-923_TOS SOD-923_TOS-M SOD-923_TOS-L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DF2S6.8MFS_L3M_0_1"
+			(polyline
+				(pts
+					(xy 0 2.54) (xy -2.54 5.08)
+				)
+				(stroke
+					(width 0.127)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.127)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 2.54 2.54)
+				)
+				(stroke
+					(width 0.127)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.127)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 2.54 -2.54) (xy 2.54 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 2.54 -5.08)
+				)
+				(stroke
+					(width 0.127)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0.127)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DF2S6.8MFS_L3M_1_1"
+			(text "Cathode"
+				(at -4.826 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(color 0 72 72 1)
+					)
+				)
+			)
+			(text "Anode"
+				(at 6.858 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(color 0 72 72 1)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -7.62 0 0)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 10.16 0 180)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "DS3234S#"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5174,7 +5398,7 @@
 			)
 		)
 		(property "Footprint" "DGN8_1P89X1P57"
-			(at 0 0 0)
+			(at 20.32 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5184,7 +5408,7 @@
 			)
 		)
 		(property "Datasheet" "TPS7A4901DGNR"
-			(at 0 0 0)
+			(at 20.32 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,7 +5455,7 @@
 		(symbol "TPS7A4901DGNR_0_1"
 			(polyline
 				(pts
-					(xy 7.62 5.08) (xy 7.62 -15.24)
+					(xy 27.94 5.08) (xy 27.94 -15.24)
 				)
 				(stroke
 					(width 0.127)
@@ -5243,7 +5467,7 @@
 			)
 			(polyline
 				(pts
-					(xy 7.62 -15.24) (xy 53.34 -15.24)
+					(xy 27.94 -15.24) (xy 53.34 -15.24)
 				)
 				(stroke
 					(width 0.127)
@@ -5255,7 +5479,7 @@
 			)
 			(polyline
 				(pts
-					(xy 53.34 5.08) (xy 7.62 5.08)
+					(xy 53.34 5.08) (xy 27.94 5.08)
 				)
 				(stroke
 					(width 0.127)
@@ -5277,26 +5501,8 @@
 					(type none)
 				)
 			)
-			(pin output line
-				(at 0 0 0)
-				(length 7.62)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at 0 -2.54 0)
+				(at 20.32 -2.54 0)
 				(length 7.62)
 				(name "FB"
 					(effects
@@ -5314,7 +5520,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 -5.08 0)
+				(at 20.32 -5.08 0)
 				(length 7.62)
 				(name "NC"
 					(effects
@@ -5332,7 +5538,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -7.62 0)
+				(at 20.32 -7.62 0)
 				(length 7.62)
 				(name "GND"
 					(effects
@@ -5360,24 +5566,6 @@
 					)
 				)
 				(number "EPAD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 60.96 -2.54 180)
-				(length 7.62)
-				(name "IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5432,6 +5620,44 @@
 					)
 				)
 				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TPS7A4901DGNR_1_1"
+			(pin power_out line
+				(at 20.32 0 0)
+				(length 7.62)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 60.96 -2.54 180)
+				(length 7.62)
+				(name "IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
