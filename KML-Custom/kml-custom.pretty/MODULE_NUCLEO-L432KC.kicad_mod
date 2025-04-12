@@ -463,4 +463,15 @@
 		(uuid "92675b77-d847-489a-a8ec-a4de1bed4c3f")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_KML_CUSTOM_MODELS}/NUCLEO-L432KC.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -180)
+		)
+	)
 )

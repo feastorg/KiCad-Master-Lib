@@ -398,7 +398,7 @@
 		(uuid "9c29e401-16a3-45be-851f-a84ec3f8261c")
 	)
 	(embedded_fonts no)
-	(model "ADS131M08IPBS.stp"
+	(model "${KICAD_KML_CUSTOM_MODELS}/ADS131M08IPBS.stp"
 		(offset
 			(xyz 0 0 0)
 		)

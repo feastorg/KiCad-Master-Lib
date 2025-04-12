@@ -677,4 +677,15 @@
 		(uuid "1a20fa6d-d678-4647-b3a8-0bc513439cd6")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_KML_CUSTOM_MODELS}/DGN0008G.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

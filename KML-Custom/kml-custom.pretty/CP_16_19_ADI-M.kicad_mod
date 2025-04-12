@@ -1230,4 +1230,15 @@
 		(uuid "40d63f69-df87-48ef-915e-1d97aa0cd074")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_KML_CUSTOM_MODELS}/CP_16_19_ADI.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
