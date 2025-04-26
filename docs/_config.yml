@@ -12,6 +12,10 @@ plugins:
 markdown: kramdown
 kramdown:
   input: GFM
+# Don't publish these
+exclude:
+  - .github
+  - TODO.md
 
 # automatically apply layout: page to all docs/*.md
 defaults:
