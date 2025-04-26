@@ -1,4 +1,4 @@
-# KiCad-Master-Lib
+# [KiCad-Master-Lib](https://feastorg.github.io/KiCad-Master-Lib/)
 
 An attempt to make a master KiCad library for symbols and footprints.
 
