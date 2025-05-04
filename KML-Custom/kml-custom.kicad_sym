@@ -12657,7 +12657,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "SJ-3524-SMT:CUI_SJ-3524-SMT"
+		(property "Footprint" "kml-custom:CUI_SJ-3524-SMT"
 			(at 0 0 0)
 			(effects
 				(font
