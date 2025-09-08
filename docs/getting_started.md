@@ -2,6 +2,7 @@
 
 The following steps will guide you through setting up your library:
 
+Work-in-progress...
 TODO
 
 1. clone to footprints folder in your-documents-folder/KiCad/x.0/footprints
