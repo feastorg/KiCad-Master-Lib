@@ -6,7 +6,7 @@ Follow this checklist to install the KiCad Master Library (KML) alongside your K
 
 - **KiCad 9.x stable**. Tested against 9.0 series releases. Earlier majors (8.x and older) are not supported for editing these libraries.
 - Git 2.25+ with submodule support.
-- Disk space: ~1-2 GB after submodules are fetched (varies by vendor repos).
+- Disk space: ~400 MB for the full checkout with submodules.
 
 ## Clone the repository with submodules
 
