@@ -1,3 +1,3 @@
 # Docs
 
-This is where the docs are kept!
+The documentation lives entirely in this directory. Start with `index.md` for an overview, then follow the dedicated guides for setup (`getting_started.md`) and contributions (`adding_components.md`).
