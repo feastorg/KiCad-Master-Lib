@@ -10,7 +10,7 @@ KiCad Master Library (KML) collects FEAST-specific custom KiCad assets alongside
 - `SparkFun-KiCad-Libraries/`: SparkFun maintained symbols, footprints, and 3D models.
 - `OPL_Kicad_Library/`: Seeed Studio Open Parts Library (OPL) content.
 
-The `docs/` directory holds this guide.
+Use the guides below for hands-on setup and contribution workflows.
 
 ## Supported KiCad versions
 
@@ -31,5 +31,5 @@ Run those commands from the repository root whenever you need the latest upstrea
 
 ## Next steps
 
-- `getting_started.md` walks through installing the libraries and configuring KiCad.
-- `adding_components.md` covers the workflow for contributing new parts to `KML-Custom`.
+- [Getting Started](getting_started) walks through installing the libraries and configuring KiCad.
+- [Adding New Components](adding_components) covers the workflow for contributing new parts to `KML-Custom`.
