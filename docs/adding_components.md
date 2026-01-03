@@ -8,6 +8,47 @@ This guide documents the workflow for adding or modifying parts in `KML-Custom`.
 - Use a unique, descriptive name. Prefer the manufacturer part number (for example `031-5431-1010`).
 - Check for similar parts to avoid duplicates.
 
+## kmlib-local organization
+
+This is the folder for our local files for kicad master library kml-custom. The "KMLib" prefixed is used for symbols and footprints to avoid name conflicts with other libraries when added to the KiCad library manager.
+
+### Symbols
+
+`.kicad_sym` files are prefixed with "KMLib\_" and organized into the following categories:
+
+| Category                    | Includes                                               |
+| --------------------------- | ------------------------------------------------------ |
+| **Power**                   | GND, +5V, VREF, net-ties, ferrite beads (logical role) |
+| **Passives**                | R, C, L, resistor networks                             |
+| **Discrete_Semiconductors** | Diodes, BJTs, MOSFETs, TVS                             |
+| **IC_Analog**               | Op-amps, ADCs, DACs, comparators                       |
+| **IC_Digital**              | Logic gates, flip-flops, buffers                       |
+| **IC_MCU_MPU**              | MCUs, MPUs, SoCs                                       |
+| **IC_Power**                | Regulators, PMICs, motor drivers                       |
+| **Sensors**                 | Temp, pressure, IMU, light                             |
+| **Connectors**              | Headers, JST, USB, terminals                           |
+| **Switches**                | Tactile, rotary, DIP                                   |
+| **Electromechanical**       | Relays, motors, buzzers                                |
+| **Misc**                    | Crystals, jumpers, test points                         |
+
+### Footprints & 3D Models
+
+`.pretty` files are prefixed with "KMLib\_" while `3dmodels` folders have no prefix. They are organized into the following categories:
+
+| Category               | Includes                                                            |
+| ---------------------- | ------------------------------------------------------------------- |
+| **Passives_SMD**       | 0402, 0603, 0805, 1206, 1210, 1812 resistors, capacitors, inductors |
+| **Passives_THT**       | Resistors, capacitors, inductors                                    |
+| **IC_SMD**             | SOIC, TSSOP, QFN, BGA packages                                      |
+| **IC_THT**             | DIP, SIP packages                                                   |
+| **Connectors_JST**     | JST XH, PH, SH series connectors                                    |
+| **Connectors_Molex**   | Molex KK, Micro-Fit connectors                                      |
+| **Connectors_Generic** | USB, HDMI, Ethernet, terminal blocks                                |
+| **Switches**           | Tactile, rotary, DIP switches                                       |
+| **Relays**             | Signal and power relays                                             |
+| **TestPoints**         | Various test point footprints                                       |
+| **Mounting**           | Mounting holes, standoffs                                           |
+
 ## 1) Create or update the schematic symbol
 
 1. Open **Symbol Editor** -> `kml-custom`.
