@@ -18,6 +18,7 @@ This is the folder for our local files for kicad master library kml-custom. The 
 
 | Category                    | Includes                                               |
 | --------------------------- | ------------------------------------------------------ |
+| **Aesthetic**               | Logos, labels, decorative elements                     |
 | **Power**                   | GND, +5V, VREF, net-ties, ferrite beads (logical role) |
 | **Passives**                | R, C, L, resistor networks                             |
 | **Discrete_Semiconductors** | Diodes, BJTs, MOSFETs, TVS                             |
@@ -37,6 +38,7 @@ This is the folder for our local files for kicad master library kml-custom. The 
 
 | Category               | Includes                                                            |
 | ---------------------- | ------------------------------------------------------------------- |
+| **Aesthetic**          | Logos, labels, decorative elements (no 3dmodels)                    |
 | **Passives_SMD**       | 0402, 0603, 0805, 1206, 1210, 1812 resistors, capacitors, inductors |
 | **Passives_THT**       | Resistors, capacitors, inductors                                    |
 | **IC_SMD**             | SOIC, TSSOP, QFN, BGA packages                                      |
