@@ -1,5 +1,16 @@
 # kmlib-local
 
-This is the folder for our local files for kicad master library kmlib-local. The "KMLib" prefixed is used for symbols and footprints to avoid name conflicts with other libraries when added to the KiCad library manager.
+FEAST's custom KiCad library organized into categorized KMLib_* symbol and footprint libraries. Components are grouped by function to improve discoverability and avoid naming conflicts with other libraries.
 
-See [docs/adding_components.md](../docs/adding_components.md) for organization breakdown and instructions on how to add or update components in this library.
+## Structure
+
+```
+kmlib-local/
+├── symbols/          # 13 categorized .kicad_sym libraries + legacy kml-custom
+├── footprints/       # 12 categorized .pretty folders + legacy kml-custom
+└── 3dmodels/         # 10 categorized .3dshapes folders
+```
+
+The KMLib_* prefix is used for all categorized libraries to prevent conflicts when added to KiCad's library manager. A legacy `kml-custom` library is maintained for backward compatibility with existing projects.
+
+See [docs/adding_components.md](../docs/adding_components.md) for detailed workflow and categorization guidelines.

@@ -4,7 +4,7 @@ KiCad Master Library (KML) collects FEAST-specific custom KiCad assets alongside
 
 ## Repository layout
 
-- `KML-Custom/`: FEAST maintained symbol, footprint, and 3D model library.
+- `kmlib-local/`: FEAST maintained symbol, footprint, and 3D model library organized into categorized KMLib\_\* libraries.
 - `arduino-kicad-library/`: upstream Arduino module symbols and footprints.
 - `digikey-kicad-library/`: Digi-Key reference symbols and footprints.
 - `SparkFun-KiCad-Libraries/`: SparkFun maintained symbols, footprints, and 3D models.
@@ -32,4 +32,4 @@ Run those commands from the repository root whenever you need the latest upstrea
 ## Next steps
 
 - [Getting Started](getting_started) walks through installing the libraries and configuring KiCad.
-- [Adding New Components](adding_components) covers the workflow for contributing new parts to `KML-Custom`.
+- [Adding New Components](adding_components) covers the workflow for contributing new parts to `kmlib-local`.

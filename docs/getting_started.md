@@ -27,7 +27,7 @@ git submodule update --init --recursive
 1. Launch KiCad.
 2. Open `Preferences -> Configure Paths`.
 3. Add `KICAD_KML_MASTER` pointing to the repository root.
-4. Add `KICAD_KML_CUSTOM_MODELS` pointing to `${KICAD_KML_MASTER}/KML-Custom/3dmodels`.
+4. Add `KICAD_KML_CUSTOM_MODELS` pointing to `${KICAD_KML_MASTER}/kmlib-local/3dmodels`.
 5. Save.
 
 Notes:
@@ -35,27 +35,47 @@ Notes:
 - Custom environment variables are the recommended way to reference third-party assets and 3D models so paths remain portable across systems.
 - Some built-in variables (for KiCad's official libraries) are versioned per major release; custom variables like the two above are user-defined and stable across updates.
 
-## Register the custom symbol library
+## Register symbol libraries
 
 1. `Preferences -> Manage Symbol Libraries...`
 2. `Global Libraries` tab.
-3. Add a row:
-   - **Nickname**: `kml-custom`
-   - **Library Path**: `${KICAD_KML_MASTER}/KML-Custom/kml-custom.kicad_sym`
-   - **Library Format**: `KiCad`
-4. Apply.
+3. Add each categorized library with `${KICAD_KML_MASTER}/kmlib-local/symbols/` as the base path:
 
-## Register the custom footprint library
+| Nickname                        | Library File                              |
+| ------------------------------- | ----------------------------------------- |
+| `KMLib_Aesthetic`               | `KMLib_Aesthetic.kicad_sym`               |
+| `KMLib_Connectors`              | `KMLib_Connectors.kicad_sym`              |
+| `KMLib_Discrete_Semiconductors` | `KMLib_Discrete_Semiconductors.kicad_sym` |
+| `KMLib_Electromechanical`       | `KMLib_Electromechanical.kicad_sym`       |
+| `KMLib_IC_Analog`               | `KMLib_IC_Analog.kicad_sym`               |
+| `KMLib_IC_Digital`              | `KMLib_IC_Digital.kicad_sym`              |
+| `KMLib_IC_MCU_MPU`              | `KMLib_IC_MCU_MPU.kicad_sym`              |
+| `KMLib_IC_Power`                | `KMLib_IC_Power.kicad_sym`                |
+| `KMLib_Misc`                    | `KMLib_Misc.kicad_sym`                    |
+| `KMLib_Passives`                | `KMLib_Passives.kicad_sym`                |
+| `KMLib_Power`                   | `KMLib_Power.kicad_sym`                   |
+| `KMLib_Sensors`                 | `KMLib_Sensors.kicad_sym`                 |
+| `KMLib_Switches`                | `KMLib_Switches.kicad_sym`                |
+
+## Register footprint libraries
 
 1. `Preferences -> Manage Footprint Libraries...`
 2. `Global Libraries` tab.
-3. Add a row:
-   - **Nickname**: `kml-custom`
-   - **Library Path**: `${KICAD_KML_MASTER}/KML-Custom/kml-custom.pretty`
-   - **Library Format**: `KiCad`
-4. Save.
+3. Add each categorized library with `${KICAD_KML_MASTER}/kmlib-local/footprints/` as the base path:
 
-Keep the nickname `kml-custom` stable. Existing symbols reference footprints by nickname.
+| Nickname               | Folder                        |
+| ---------------------- | ----------------------------- |
+| `KMLib_Aesthetic`      | `KMLib_Aesthetic.pretty`      |
+| `KMLib_Boards_Modules` | `KMLib_Boards_Modules.pretty` |
+| `KMLib_Connectors`     | `KMLib_Connectors.pretty`     |
+| `KMLib_IC_SMD`         | `KMLib_IC_SMD.pretty`         |
+| `KMLib_IC_THT`         | `KMLib_IC_THT.pretty`         |
+| `KMLib_Mounting`       | `KMLib_Mounting.pretty`       |
+| `KMLib_Passives_SMD`   | `KMLib_Passives_SMD.pretty`   |
+| `KMLib_Passives_THT`   | `KMLib_Passives_THT.pretty`   |
+| `KMLib_Relays`         | `KMLib_Relays.pretty`         |
+| `KMLib_Switches`       | `KMLib_Switches.pretty`       |
+| `KMLib_TestPoints`     | `KMLib_TestPoints.pretty`     |
 
 ## Optional: register vendor libraries
 
@@ -70,9 +90,9 @@ Refer to each vendor's README for any special steps.
 
 ## Verify the installation
 
-1. Open the **Symbol Editor**, select `kml-custom`, and browse symbols.
-2. Open the **Footprint Editor**, select `kml-custom`, and browse footprints.
-3. Place a `kml-custom` footprint on a scratch PCB and open the **3D Viewer** to confirm `${KICAD_KML_CUSTOM_MODELS}` resolves. If models do not appear, recheck the path variable. Using environment variables for 3D models is supported and recommended.
+1. Open the **Symbol Editor**, select any KMLib\_\* library, and browse symbols.
+2. Open the **Footprint Editor**, select any KMLib\_\* library, and browse footprints.
+3. Place a footprint on a scratch PCB and open the **3D Viewer** to confirm `${KICAD_KML_CUSTOM_MODELS}` resolves and models appear correctly.
 
 ## Keeping your checkout current
 

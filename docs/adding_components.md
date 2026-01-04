@@ -1,6 +1,6 @@
 # Adding New Components
 
-This guide documents the workflow for adding or modifying parts in `KML-Custom`. Use KiCad **9.x stable**.
+This guide documents the workflow for adding or modifying parts in `kmlib-local`. Use KiCad **9.x stable**.
 
 ## Before you start
 
@@ -10,7 +10,7 @@ This guide documents the workflow for adding or modifying parts in `KML-Custom`.
 
 ## kmlib-local organization
 
-This is the folder for our local files for kicad master library kml-custom. The "KMLib" prefixed is used for symbols and footprints to avoid name conflicts with other libraries when added to the KiCad library manager.
+The `kmlib-local/` folder contains FEAST's custom KiCad libraries. Components are organized into categorized KMLib\_\* libraries to avoid naming conflicts and improve discoverability. The legacy `kml-custom` library is maintained for backward compatibility.
 
 ### Symbols
 
@@ -52,35 +52,35 @@ This is the folder for our local files for kicad master library kml-custom. The 
 
 ## 1) Create or update the schematic symbol
 
-1. Open **Symbol Editor** -> `kml-custom`.
+1. Open **Symbol Editor** and select the appropriate KMLib\_\* library based on component category.
 2. Create a symbol or duplicate a similar one.
 3. Populate properties:
    - `Reference`: family designator (`U`, `J`, etc.).
    - `Value`: match the symbol name.
-   - `Footprint`: `kml-custom:<footprint_name>` once the footprint exists.
+   - `Footprint`: `KMLib_<Category>:<footprint_name>` once the footprint exists.
    - `Datasheet`, `Description`, `Keywords`: copy from the datasheet.
 4. Set pin names, electrical types, and units. Follow KiCad's symbol conventions for readability.
 5. Run **Tools -> Symbol Checker** and fix issues before saving.
 
 ## 2) Create or update the footprint
 
-1. Open **Footprint Editor** -> `kml-custom`.
+1. Open **Footprint Editor** and select the appropriate KMLib\_\* library based on component category.
 2. Create the footprint in millimetres. Align the local origin sensibly (pin 1 or part centre).
 3. Add `F.SilkS`, `B.SilkS`, `F.CrtYd`, and `F.Fab` graphics following KiCad conventions.
-4. In **Footprint Properties -> 3D Models**, reference `${KICAD_KML_CUSTOM_MODELS}/<model-file>`.
+4. In **Footprint Properties -> 3D Models**, reference `${KICAD_KML_CUSTOM_MODELS}/<category>/<model-file>`.
 5. Verify pad-to-pad spacing against the datasheet.
 6. Run **Tools -> Footprint Checker** and resolve errors.
 
 ## 3) Place the 3D model
 
-1. Put the STEP/WRL model in `KML-Custom/3dmodels`.
-2. Reference it via the `${KICAD_KML_CUSTOM_MODELS}` variable so paths are portable between systems.
+1. Put the STEP/WRL model in `kmlib-local/3dmodels/<Category>.3dshapes/` matching the footprint category.
+2. Reference it via the `${KICAD_KML_CUSTOM_MODELS}` variable: `${KICAD_KML_CUSTOM_MODELS}/<Category>.3dshapes/<model-file>`.
 3. Orient/scale in the **3D Models** tab.
 4. Confirm with **3D Viewer**.
 
 ## 4) Link symbol and footprint
 
-- Update the symbol `Footprint` field to `kml-custom:<footprint_name>`.
+- Update the symbol `Footprint` field to `KMLib_<Category>:<footprint_name>` matching the footprint library used.
 - If the part supports multiple packages, create aliases or variants with clear suffixes.
 
 ## 5) Validate
@@ -91,12 +91,12 @@ This is the folder for our local files for kicad master library kml-custom. The 
 
 ## 6) Commit and share
 
-Stage the typical set:
+Stage the categorized files:
 
 ```sh
-git add KML-Custom/kml-custom.kicad_sym
-git add KML-Custom/kml-custom.pretty/<new-footprint>.kicad_mod
-git add KML-Custom/3dmodels/<model-file>
+git add kmlib-local/symbols/KMLib_<Category>.kicad_sym
+git add kmlib-local/footprints/KMLib_<Category>.pretty/<new-footprint>.kicad_mod
+git add kmlib-local/3dmodels/<Category>.3dshapes/<model-file>
 ```
 
 Commit with a clear message referencing the part number. If you updated a vendor submodule, commit that change separately so upstream updates stay traceable.
