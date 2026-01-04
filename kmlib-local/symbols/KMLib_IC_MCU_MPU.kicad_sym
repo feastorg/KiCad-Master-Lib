@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Module:Arduino_Nano"
+		(property "Footprint" "KMLib_Boards_Modules:Arduino_Nano"
 			(at 0 0 0)
 			(effects
 				(font
@@ -650,7 +650,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "NUCLEO-L432KC:MODULE_NUCLEO-L432KC"
+		(property "Footprint" "KMLib_Boards_Modules:MODULE_NUCLEO-L432KC"
 			(at 0 0 0)
 			(effects
 				(font

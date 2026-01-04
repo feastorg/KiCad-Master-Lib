@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RS_20_ADI"
+		(property "Footprint" "KMLib_IC_SMD:RS_20_ADI"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52,14 +52,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "ADM3260ARSZ"
@@ -515,7 +507,7 @@
 				)
 			)
 		)
-		(property "Footprint" "D16"
+		(property "Footprint" "KMLib_IC_SMD:CD4060BM"
 			(at 0 0 0)
 			(effects
 				(font
@@ -542,14 +534,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "CD4060BM"
@@ -933,7 +917,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:WS2812-5050-4PIN"
+		(property "Footprint" "KMLib_IC_SMD:WS2812-5050-4PIN"
 			(at -16.51 -8.89 0)
 			(effects
 				(font

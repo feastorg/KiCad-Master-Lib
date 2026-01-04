@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CP_16_19_ADI"
+		(property "Footprint" "KMLib_IC_SMD:CP_16_19_ADI"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52,14 +52,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "AD8426BCPZ-WP"
@@ -442,14 +434,13 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "QFP50P700X700X120-32N"
+		(property "Footprint" "KMLib_IC_SMD:QFP50P700X700X120-32N"
 			(at 34.29 -84.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ads131m08.pdf?ts=1622395964906&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS131M08%253FHQS%253Dasc-dc-dac-dc_ads131m08-dspbs-pf-asc_adc_0to9_null_fp-wwe%2526DCM%253Dyes%2526dclid%253DCKrhlvL38fACFfaI2AUdXdYA-"
@@ -1135,7 +1126,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DWV0008A"
+		(property "Footprint" "KMLib_IC_SMD:DWV0008A"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1162,14 +1153,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "AMC1311BDWVR"
@@ -1435,7 +1418,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "CD74HC4053E:DIP254P762X508-16"
+		(property "Footprint" "KMLib_IC_THT:DIP254P762X508-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1918,7 +1901,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-8N"
+		(property "Footprint" "KMLib_IC_SMD:SOIC127P600X175-8N"
 			(at 24.13 -94.92 0)
 			(effects
 				(font

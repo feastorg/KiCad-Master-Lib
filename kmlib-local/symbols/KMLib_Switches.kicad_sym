@@ -27,7 +27,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "1101M2S3CQE2:SW_1101M2S3CQE2"
+		(property "Footprint" "KMLib_Switches:SW_Slide-CK-1101M2S3CQE2"
 			(at 0 0 0)
 			(effects
 				(font

@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN-24_ALM"
+		(property "Footprint" "KMLib_IC_SMD:QFN-24_ALM"
 			(at 0 0 0)
 			(effects
 				(font
@@ -52,14 +52,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "A4957SESTR-T"
@@ -775,7 +767,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RS_20_ADI"
+		(property "Footprint" "KMLib_IC_SMD:RS_20_ADI"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1520,7 +1512,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kml-custom:SOIC_05WU-7_DIO"
+		(property "Footprint" "KMLib_IC_SMD:SOIC_05WU-7_DIO"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1835,7 +1827,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RVA16_2P14X2P14"
+		(property "Footprint" "KMLib_IC_SMD:RVA16_2P14X2P14"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1862,14 +1854,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "BQ24650RVAT"
@@ -2554,7 +2538,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DGN8_1P89X1P57"
+		(property "Footprint" "KMLib_IC_SMD:DGN8_1P89X1P57"
 			(at 20.32 0 0)
 			(effects
 				(font
@@ -2581,14 +2565,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "TPS7A4901DGNR"
@@ -2848,7 +2824,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RDN0011A-MFG"
+		(property "Footprint" "KMLib_IC_SMD:RDN0011A-MFG_Fixed"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2875,14 +2851,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "TPSM33615FRDNR"
@@ -3176,7 +3144,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RDN0011A-MFG"
+		(property "Footprint" "KMLib_IC_SMD:RDN0011A-MFG_Fixed"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3203,14 +3171,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "TPSM33625RDNR"

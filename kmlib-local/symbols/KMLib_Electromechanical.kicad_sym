@@ -28,7 +28,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "KMLib_Passives_THT:FS20055C2"
 			(at 0 0 0)
 			(effects
 				(font

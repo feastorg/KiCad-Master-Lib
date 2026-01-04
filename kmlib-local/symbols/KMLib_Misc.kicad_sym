@@ -24,7 +24,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "5000"
+		(property "Footprint" "KMLib_TestPoints:5001 Test Point Miniature Keystone"
 			(at 16.51 -94.92 0)
 			(effects
 				(font
@@ -158,7 +158,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "5006"
+		(property "Footprint" "KMLib_TestPoints:5006 Test Point Compact Keystone"
 			(at 16.51 -94.92 0)
 			(effects
 				(font

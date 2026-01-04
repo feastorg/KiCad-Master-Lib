@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Atlas-Scientific:Atlas_OEM"
+		(property "Footprint" "KMLib_Boards_Modules:Atlas_OEM"
 			(at 0 0 0)
 			(effects
 				(font
@@ -47,14 +47,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(symbol "AtlasOEM_1_0"
@@ -312,7 +304,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "SOIC127P1032X265-20N"
+		(property "Footprint" "KMLib_IC_SMD:SOIC127P1032X265-20N"
 			(at 31.75 -94.92 0)
 			(effects
 				(font
@@ -791,7 +783,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "ENS160-BGLM:XDCR_ENS160-BGLM"
+		(property "Footprint" "KMLib_IC_SMD:XDCR_ENS160-BGLM"
 			(at 0 0 0)
 			(effects
 				(font

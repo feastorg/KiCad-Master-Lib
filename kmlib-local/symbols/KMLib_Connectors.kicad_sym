@@ -24,7 +24,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "03154311010"
+		(property "Footprint" "KMLib_Connectors:03154311010"
 			(at 26.67 -94.92 0)
 			(effects
 				(font
@@ -213,7 +213,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_1217861-1_TEC"
+		(property "Footprint" "KMLib_Connectors:CONN_1217861-1_TEC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -240,14 +240,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "1217861-1"
@@ -676,7 +668,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "1439890"
+		(property "Footprint" "KMLib_Connectors:1439890"
 			(at 6.096 -88.57 0)
 			(effects
 				(font
@@ -900,7 +892,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "1751066"
+		(property "Footprint" "KMLib_Connectors:1751066"
 			(at 16.51 -94.92 0)
 			(effects
 				(font
@@ -1072,7 +1064,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "25015504"
+		(property "Footprint" "KMLib_Connectors:25015504-RJ45"
 			(at 39.37 -94.92 0)
 			(effects
 				(font
@@ -1461,7 +1453,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN4_2606-1104/010-000_WAG"
+		(property "Footprint" "KMLib_Connectors:CONN4_2606-1104_010-000_WAG"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1488,14 +1480,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "ki_keywords" "2606-1104/010-000"
@@ -2072,7 +2056,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "5025700893"
+		(property "Footprint" "KMLib_Connectors:5025700893"
 			(at 39.37 -94.92 0)
 			(effects
 				(font
@@ -2444,7 +2428,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical"
+		(property "Footprint" "KMLib_Connectors:Hole_Mounted_24mmx34mm_PinHeader_1x05_P2.54mm_Vertical"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2771,7 +2755,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "1333817"
+		(property "Footprint" "KMLib_Connectors:LPTA_16_2-10_0-ZB"
 			(at 19.05 -94.92 0)
 			(effects
 				(font
@@ -3018,7 +3002,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "PCC-SMP-V-K:OMEGA_PCC-SMP-V-K"
+		(property "Footprint" "KMLib_Connectors:OMEGA_PCC-SMP-V-K"
 			(at 0.254 -1.27 0)
 			(effects
 				(font
@@ -3268,7 +3252,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "kml-custom:CUI_SJ-3524-SMT"
+		(property "Footprint" "KMLib_Connectors:CUI_SJ-3524-SMT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3666,7 +3650,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "SSQ-115-03-T-S:SAMTEC_SSQ-115-03-T-S"
+		(property "Footprint" "KMLib_Connectors:SAMTEC_SSQ-115-03-T-S"
 			(at 0 0 0)
 			(effects
 				(font
