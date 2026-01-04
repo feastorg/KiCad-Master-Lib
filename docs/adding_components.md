@@ -10,7 +10,7 @@ This guide documents the workflow for adding or modifying parts in `kmlib-local`
 
 ## kmlib-local organization
 
-The `kmlib-local/` folder contains FEAST's custom KiCad libraries. Components are organized into categorized KMLib\_\* libraries to avoid naming conflicts and improve discoverability. The legacy `kml-custom` library is maintained for backward compatibility.
+The `kmlib-local/` folder contains FEAST's custom KiCad libraries. Components are organized into categorized KMLib\_\* libraries to avoid naming conflicts and improve discoverability.
 
 ### Symbols
 
