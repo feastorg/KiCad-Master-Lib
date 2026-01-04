@@ -1,7 +1,7 @@
 (footprint "1751066"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "1751066")
 	(tags "Connector")
@@ -25,18 +25,6 @@
 			(font
 				(size 1.27 1.27)
 				(thickness 0.254)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "0befa709-0688-4f04-b949-2943430fb82f")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -102,7 +90,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "d4fa2ee9-f525-44c0-9623-d15bcb71c199")
 	)
@@ -173,7 +161,8 @@
 		(remove_unused_layers no)
 		(uuid "c01dab6b-c199-4141-a7af-5e3f13fd6c01")
 	)
-	(model "1751066.stp"
+	(embedded_fonts no)
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Connectors.3dshapes/1751066.stp"
 		(offset
 			(xyz -2.249999966 -3.58999986 -0.02999999888)
 		)

@@ -1,7 +1,7 @@
-(footprint "ScrewMounted_24mmx34mm_PinHeader_1x05_P2.54mm_Vertical"
-	(version 20240108)
+(footprint "Hole_Mounted_24mmx34mm_PinHeader_1x05_P2.54mm_Vertical"
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Through hole straight pin header, 1x05, 2.54mm pitch, single row")
 	(tags "Through hole pin header THT 1x05 2.54mm single row")
@@ -27,18 +27,6 @@
 			)
 		)
 	)
-	(property "Footprint" "ScrewMounted_24mmx34mm_PinHeader_1x05_P2.54mm_Vertical"
-		(at 32.6 -0.53 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "bdb70cb6-d1f1-4c4e-bbc8-23742b76b9f3")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -48,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -131,7 +121,7 @@
 			(width 0.15)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "cd0dccbe-f117-4566-9092-2864dfe006ea")
 	)
@@ -142,7 +132,7 @@
 			(width 0.15)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "d9b0e95e-bee4-4928-959f-1a1db5bce9a0")
 	)
@@ -153,7 +143,7 @@
 			(width 0.15)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "141a5cfc-98c2-4604-a29b-095de6305367")
 	)
@@ -164,7 +154,7 @@
 			(width 0.15)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "Cmts.User")
 		(uuid "2c6d1d82-c0c8-47d4-b834-4e84eae28bd8")
 	)
@@ -215,7 +205,7 @@
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "c8feee1d-f41c-47b4-9a82-9896a65095f6")
 	)
@@ -226,7 +216,7 @@
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "10a656bb-b42c-4126-90da-efd39fd75013")
 	)
@@ -237,7 +227,7 @@
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "ffd9a934-1cc9-4a5f-b665-d673e242ef2a")
 	)
@@ -248,7 +238,7 @@
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "2ea2189a-03b1-45ee-9aba-9380645aab32")
 	)
@@ -378,6 +368,23 @@
 			(xy -8.96 -6.96) (xy -8.95 0.03)
 		)
 		(height 4.424475)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+			(override_value "7.00")
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 2)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
 		(gr_text "7.00 mm"
 			(at -12.67 -3.31 270.0819682)
 			(layer "F.SilkS")
@@ -389,20 +396,6 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-			(override_value "7.00")
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 2)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
 	)
 	(dimension
 		(type aligned)
@@ -412,6 +405,23 @@
 			(xy -9.060989 17.847334) (xy -0.06 17.85)
 		)
 		(height -3.267463)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+			(override_value "9.00")
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
 		(gr_text "9.00 mm"
 			(at -4.5592 13.481204 359.9830296)
 			(layer "F.SilkS")
@@ -423,20 +433,6 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-			(override_value "9.00")
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
 	)
 	(dimension
 		(type aligned)
@@ -446,6 +442,22 @@
 			(xy 24.929011 17.847334) (xy -9.060989 17.847334)
 		)
 		(height -4.35)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
 		(gr_text "33.9900 mm"
 			(at 7.934011 21.097334 0)
 			(layer "F.SilkS")
@@ -457,19 +469,6 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
 	)
 	(dimension
 		(type aligned)
@@ -479,17 +478,6 @@
 			(xy -9.06 10.74) (xy -9.05 17.73)
 		)
 		(height 4.424475)
-		(gr_text "7.00 mm"
-			(at -12.77 14.39 270.0819682)
-			(layer "F.SilkS")
-			(uuid "de319313-44b8-4441-bc31-110eec94c23a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-		)
 		(format
 			(prefix "")
 			(suffix "")
@@ -502,8 +490,22 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 2)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "7.00 mm"
+			(at -12.77 14.39 270.0819682)
+			(layer "F.SilkS")
+			(uuid "de319313-44b8-4441-bc31-110eec94c23a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
 	)
 	(dimension
 		(type aligned)
@@ -513,17 +515,6 @@
 			(xy -8.96 -6.96) (xy 25.03 -6.96)
 		)
 		(height -4.35)
-		(gr_text "33.9900 mm"
-			(at 8.035 -12.41 0)
-			(layer "F.SilkS")
-			(uuid "df50c40a-e77d-4f17-9222-0fc6863f77f4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-		)
 		(format
 			(prefix "")
 			(suffix "")
@@ -535,8 +526,22 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "33.9900 mm"
+			(at 8.035 -12.41 0)
+			(layer "F.SilkS")
+			(uuid "df50c40a-e77d-4f17-9222-0fc6863f77f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
 	)
 	(dimension
 		(type aligned)
@@ -546,17 +551,6 @@
 			(xy -8.990989 -6.802666) (xy 0.01 -6.8)
 		)
 		(height -3.267463)
-		(gr_text "9.00 mm"
-			(at -4.4892 -11.168796 359.9830296)
-			(layer "F.SilkS")
-			(uuid "fea9f5d0-eb95-4910-be4b-51da62c7f899")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-		)
 		(format
 			(prefix "")
 			(suffix "")
@@ -569,8 +563,22 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "9.00 mm"
+			(at -4.4892 -11.168796 359.9830296)
+			(layer "F.SilkS")
+			(uuid "fea9f5d0-eb95-4910-be4b-51da62c7f899")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
 	)
 	(pad "" np_thru_hole circle
 		(at -9.03 17.69)
@@ -640,15 +648,16 @@
 		(remove_unused_layers no)
 		(uuid "c1741286-ba0e-4f33-8f37-5fd51504bac5")
 	)
-	(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.wrl"
+	(embedded_fonts no)
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Connectors.3dshapes/Electrically Isolated EZO Carrier Board.STEP"
 		(offset
-			(xyz 0 0 0)
+			(xyz -8.5 -51.25 -16)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -90 -0 94)
 		)
 	)
 )

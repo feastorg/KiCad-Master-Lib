@@ -869,4 +869,15 @@
 		(uuid "51965d19-eab7-414e-8b0d-d8eb55e4958b")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Connectors.3dshapes/31-5431-1010.stp"
+		(offset
+			(xyz -1.5 21.5 8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
 )

@@ -397,4 +397,15 @@
 		(uuid "162d5410-6baa-448a-8bf8-a482be19fb94")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Boards_Modules.3dshapes/pH_OEM.step"
+		(offset
+			(xyz -114.3 15.5 1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )

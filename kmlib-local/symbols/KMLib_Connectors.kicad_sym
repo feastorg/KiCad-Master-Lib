@@ -190,7 +190,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "1217861-1_Terminal_Tab"
+	(symbol "1217861-1_Tab"
 		(pin_names
 			(offset 0.254)
 		)
@@ -205,7 +205,7 @@
 				)
 			)
 		)
-		(property "Value" "1217861-1_Terminal_Tab"
+		(property "Value" "1217861-1_Tab"
 			(at 0 0 0)
 			(effects
 				(font
@@ -213,7 +213,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KMLib_Connectors:CONN_1217861-1_TEC"
+		(property "Footprint" "KMLib_Connectors:1217861-1_Tab"
 			(at 0 0 0)
 			(effects
 				(font
@@ -260,7 +260,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "1217861-1_Terminal_Tab_1_1"
+		(symbol "1217861-1_Tab_1_1"
 			(polyline
 				(pts
 					(xy 5.08 2.54) (xy 5.08 -5.08)
@@ -452,7 +452,7 @@
 				)
 			)
 		)
-		(symbol "1217861-1_Terminal_Tab_1_2"
+		(symbol "1217861-1_Tab_1_2"
 			(polyline
 				(pts
 					(xy 5.08 2.54) (xy 5.08 -5.08)

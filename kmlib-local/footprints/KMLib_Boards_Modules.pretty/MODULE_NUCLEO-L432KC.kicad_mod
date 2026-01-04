@@ -463,7 +463,7 @@
 		(uuid "92675b77-d847-489a-a8ec-a4de1bed4c3f")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_KML_CUSTOM_MODELS}/NUCLEO-L432KC.step"
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Boards_Modules.3dshapes/NUCLEO-L432KC.step"
 		(offset
 			(xyz 0 0 0)
 		)

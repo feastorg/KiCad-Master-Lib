@@ -1,7 +1,7 @@
 (footprint "LPT_6_2-7_5-ZB"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "1098167-2")
 	(tags "Connector")
@@ -28,18 +28,6 @@
 			)
 		)
 	)
-	(property "Footprint" "LPT_6_2-7_5-ZB"
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "edc7b27e-3ba7-464c-a0d1-215db1d7b65e")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -49,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,6 +50,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -254,7 +244,8 @@
 		(remove_unused_layers no)
 		(uuid "1da9cddf-3670-427d-a642-780b144768b5")
 	)
-	(model "1098167.stp"
+	(embedded_fonts no)
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Connectors.3dshapes/1098167.stp"
 		(offset
 			(xyz -4.249999936 -18.99999971 0.5699999843)
 		)
