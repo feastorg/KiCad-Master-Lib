@@ -1,0 +1,120 @@
+(footprint "5001 Test Point Miniature Keystone"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "5001")
+	(tags "Test Point")
+	(property "Reference" "TP**"
+		(at -0.392 -1.99 0)
+		(layer "F.SilkS")
+		(uuid "f9c9a7b3-7d51-4cc9-a246-804695700a9a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "5001"
+		(at -0.392 -1.99 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0d351347-03e4-45fc-8368-b1f1c6b5d869")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e2b22c32-dc25-4563-95c4-02ba7f92d698")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b42a4a9c-4b24-40f6-a14c-ddc95a660d6f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.27)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "75a91920-da34-4531-ad50-81d1dac06242")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.27)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "14da3209-298c-4884-aefe-3786924e8c68")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.27)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "84ba971f-c33b-4472-8a26-1946e86e4012")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.392 -1.99 0)
+		(layer "F.Fab")
+		(uuid "9162e46f-205c-4610-b2b5-a6efd617ae62")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f17c52e6-1cef-4dd8-acfb-3bc0c576aa33")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/TestPoints.3dshapes/5001.stp"
+		(offset
+			(xyz 0 0 1.649999951)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
