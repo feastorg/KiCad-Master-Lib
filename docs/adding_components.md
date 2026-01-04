@@ -36,20 +36,19 @@ This is the folder for our local files for kicad master library kml-custom. The 
 
 `.pretty` files are prefixed with "KMLib\_" while `3dmodels` folders have no prefix. They are organized into the following categories:
 
-| Category               | Includes                                                            |
-| ---------------------- | ------------------------------------------------------------------- |
-| **Aesthetic**          | Logos, labels, decorative elements (no 3dmodels)                    |
-| **Passives_SMD**       | 0402, 0603, 0805, 1206, 1210, 1812 resistors, capacitors, inductors |
-| **Passives_THT**       | Resistors, capacitors, inductors                                    |
-| **IC_SMD**             | SOIC, TSSOP, QFN, BGA packages                                      |
-| **IC_THT**             | DIP, SIP packages                                                   |
-| **Connectors_JST**     | JST XH, PH, SH series connectors                                    |
-| **Connectors_Molex**   | Molex KK, Micro-Fit connectors                                      |
-| **Connectors_Generic** | USB, HDMI, Ethernet, terminal blocks                                |
-| **Switches**           | Tactile, rotary, DIP switches                                       |
-| **Relays**             | Signal and power relays                                             |
-| **TestPoints**         | Various test point footprints                                       |
-| **Mounting**           | Mounting holes, standoffs                                           |
+| Category           | Includes                                                            |
+| ------------------ | ------------------------------------------------------------------- |
+| **Aesthetic**      | Logos, labels, decorative elements (no 3dmodels)                    |
+| **Boards_Modules** | Discrete boards, modules, shields                                   |
+| **Passives_SMD**   | 0402, 0603, 0805, 1206, 1210, 1812 resistors, capacitors, inductors |
+| **Passives_THT**   | Resistors, capacitors, inductors                                    |
+| **IC_SMD**         | SOIC, TSSOP, QFN, BGA packages                                      |
+| **IC_THT**         | DIP, SIP packages                                                   |
+| **Connectors**     | Headers, JST, USB, terminals                                        |
+| **Switches**       | Tactile, rotary, DIP switches                                       |
+| **Relays**         | Signal and power relays                                             |
+| **TestPoints**     | Various test point footprints                                       |
+| **Mounting**       | Mounting holes, standoffs                                           |
 
 ## 1) Create or update the schematic symbol
 
