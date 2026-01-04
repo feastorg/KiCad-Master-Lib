@@ -1,7 +1,7 @@
 (footprint "DIP254P762X508-16"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at -3.53134 -20.29892 0)
@@ -21,18 +21,6 @@
 		(effects
 			(font
 				(size 1.641606 1.641606)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "67a268b9-89d9-4123-a3b7-27974b1c6cea")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -967,5 +955,17 @@
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
 		(uuid "bef661f9-bed9-4320-ab95-91eb28aac90f")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-16_W7.62mm.step"
+		(offset
+			(xyz -7.6 17.75 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
 	)
 )

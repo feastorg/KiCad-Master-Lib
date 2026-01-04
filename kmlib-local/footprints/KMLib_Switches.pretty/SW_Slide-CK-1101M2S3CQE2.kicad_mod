@@ -308,7 +308,7 @@
 		(uuid "174fa9ef-c6e2-4bfc-884b-8bc7c963ed0b")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_KML_CUSTOM_MODELS}/1101M2S3CQE2.step"
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Switches.3dshapes/1101M2S3CQE2.step"
 		(offset
 			(xyz 0 -4.65 0)
 		)

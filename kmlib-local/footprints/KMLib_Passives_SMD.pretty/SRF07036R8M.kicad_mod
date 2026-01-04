@@ -1,7 +1,7 @@
 (footprint "SRF07036R8M"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "SRF0703-6R8M-1")
 	(tags "Inductor")
@@ -28,18 +28,6 @@
 			)
 		)
 	)
-	(property "Footprint" "SRF07036R8M"
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "f6ac0d64-10b3-4a5e-bc0f-b6b3cd0bf4ea")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -49,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,6 +50,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -261,28 +251,29 @@
 	(pad "1" smd rect
 		(at -0.9 -2.45)
 		(size 1.4 3)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "8ce6bf06-28f7-4fd7-9abb-69dda96dc83d")
 	)
 	(pad "2" smd rect
 		(at 0.9 -2.45)
 		(size 1.4 3)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "f263240b-e62d-49a9-857b-17522ade8836")
 	)
 	(pad "3" smd rect
 		(at 0.9 2.45)
 		(size 1.4 3)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "671db6b2-7344-4a09-8420-9d74a8817902")
 	)
 	(pad "4" smd rect
 		(at -0.9 2.45)
 		(size 1.4 3)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "2aae811e-30eb-4cea-a68b-41db769c6801")
 	)
-	(model "SRF0703-6R8M.stp"
+	(embedded_fonts no)
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Passives_SMD.3dshapes/SRF0703-6R8M.stp"
 		(offset
 			(xyz 0 0 0)
 		)
