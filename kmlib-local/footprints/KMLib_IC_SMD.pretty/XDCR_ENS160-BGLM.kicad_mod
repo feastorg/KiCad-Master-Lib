@@ -1,7 +1,7 @@
 (footprint "XDCR_ENS160-BGLM"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "U**"
 		(at 0.155 -3.385 0)
@@ -25,18 +25,6 @@
 			)
 		)
 	)
-	(property "Footprint" "XDCR_ENS160-BGLM"
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "a1c67997-c5ab-4953-868a-b1a3772d58d5")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -46,6 +34,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -58,21 +47,11 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(attr smd)
-	(fp_circle
-		(center -2.15 -1.075)
-		(end -2.05 -1.075)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill none)
-		(layer "F.SilkS")
-		(uuid "4ec639f2-3e9d-4598-880c-44b01111e4ca")
-	)
 	(fp_poly
 		(pts
 			(xy -1.525 -1.525) (xy -0.575 -1.525) (xy -0.575 -0.575) (xy -1.525 -0.575)
@@ -81,7 +60,7 @@
 			(width 0.01)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Mask")
 		(uuid "e90c0b01-63db-468d-8322-c4ebfd0394f6")
 	)
@@ -93,7 +72,7 @@
 			(width 0.01)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Mask")
 		(uuid "0545a5be-99d8-44e5-8c79-6419b31ddb92")
 	)
@@ -105,7 +84,7 @@
 			(width 0.01)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Mask")
 		(uuid "016b6e7c-dd36-414a-a0b0-3b048471d906")
 	)
@@ -117,7 +96,7 @@
 			(width 0.01)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Mask")
 		(uuid "7de9e9b1-8f9b-4639-b639-e18cdefa69de")
 	)
@@ -129,7 +108,7 @@
 			(width 0.01)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Mask")
 		(uuid "bfa1214e-3646-4e77-88a9-68f913cac151")
 	)
@@ -141,7 +120,7 @@
 			(width 0.01)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Mask")
 		(uuid "1c92e61b-1c61-4977-a211-d1f4df1b0e74")
 	)
@@ -153,7 +132,7 @@
 			(width 0.01)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Mask")
 		(uuid "fa5dc687-0c91-46d0-a1bc-489f9a6939a3")
 	)
@@ -165,7 +144,7 @@
 			(width 0.01)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Mask")
 		(uuid "f3c30096-f195-407c-823e-356fc0d709b3")
 	)
@@ -177,9 +156,20 @@
 			(width 0.01)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Mask")
 		(uuid "b75a6ff4-d3dd-444b-a3d7-72f41366c191")
+	)
+	(fp_circle
+		(center -2.15 -1.075)
+		(end -2.05 -1.075)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "4ec639f2-3e9d-4598-880c-44b01111e4ca")
 	)
 	(fp_line
 		(start -2.5 -2.5)
@@ -268,7 +258,7 @@
 			(width 0.2)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "356ff19c-287f-49cb-801f-c4c17c005d55")
 	)
@@ -325,5 +315,17 @@
 		(size 0.85 0.85)
 		(layers "F.Cu" "F.Paste")
 		(uuid "4bd28d1e-e868-4265-a4b2-76253a31eb84")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/IC_SMD.3dshapes/ENS160-BGLM.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
 	)
 )

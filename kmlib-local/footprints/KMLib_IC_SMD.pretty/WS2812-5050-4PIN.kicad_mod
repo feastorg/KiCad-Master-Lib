@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "<h3>WS2812B</h3>\n\n<p>Specifications:\n<ul><li>Pin count: 4</li>\n<li>Size: 5.0 x 5.0 mm</li>\n</ul></p>\n<p><b>Datasheet referenced for footprint:</b> <a href=\"http://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf\">WS2812B</a></p>\n<p>Example device:\n<ul><li>WS2812B</li>")
+	(descr "Pin count: 4, Size: 5.0 x 5.0 mm, Datasheet referenced for footprint: http://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
 		(at 0 -2.794 0)
@@ -263,7 +263,7 @@
 		(uuid "f3039894-2404-46b8-82a9-63970cbbc0b4")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_KML_CUSTOM_MODELS}/WS2812B-5050-510211.STEP"
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/IC_SMD.3dshapes/WS2812B-5050-510211.STEP"
 		(offset
 			(xyz 0 0 0)
 		)

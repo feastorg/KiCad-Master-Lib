@@ -1051,7 +1051,7 @@
 		(uuid "9ffb867d-9647-41d0-a5c8-a42fc5369f70")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_KML_CUSTOM_MODELS}/D0016A.stp"
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/IC_SMD.3dshapes/D0016A.stp"
 		(offset
 			(xyz 0 0 0)
 		)

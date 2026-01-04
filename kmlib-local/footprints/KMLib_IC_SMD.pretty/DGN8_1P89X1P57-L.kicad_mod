@@ -677,7 +677,7 @@
 		(uuid "a333d1f5-4224-4d8e-9788-ec08de4f9bda")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_KML_CUSTOM_MODELS}/DGN0008G.stp"
+	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/IC_SMD.3dshapes/DGN0008G.stp"
 		(offset
 			(xyz 0 0 0)
 		)
