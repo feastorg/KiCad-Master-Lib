@@ -263,7 +263,7 @@
 		(uuid "f3039894-2404-46b8-82a9-63970cbbc0b4")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/IC_SMD.3dshapes/WS2812B-5050-510211.STEP"
+	(model "${KMLIB_LOCAL}/3dmodels/IC_SMD.3dshapes/WS2812B-5050-510211.STEP"
 		(offset
 			(xyz 0 0 0)
 		)

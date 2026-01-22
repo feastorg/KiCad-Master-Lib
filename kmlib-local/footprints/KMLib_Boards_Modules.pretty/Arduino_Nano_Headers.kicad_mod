@@ -628,7 +628,7 @@
 		(uuid "59a4cc04-701b-4376-9005-58bf36a059d4")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Boards_Modules.3dshapes/arduino_nano_v3+female_headers.step"
+	(model "${KMLIB_LOCAL}/3dmodels/Boards_Modules.3dshapes/arduino_nano_v3+female_headers.step"
 		(offset
 			(xyz -1.3 4.1 12.5)
 		)

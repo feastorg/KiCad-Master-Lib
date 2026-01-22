@@ -605,7 +605,7 @@
 		(uuid "d93182d7-611f-4a7a-9926-6dba6ebacb14")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/IC_SMD.3dshapes/A4957SESTR-T.stp"
+	(model "${KMLIB_LOCAL}/3dmodels/IC_SMD.3dshapes/A4957SESTR-T.stp"
 		(offset
 			(xyz -1.5 -2.1 -3)
 		)

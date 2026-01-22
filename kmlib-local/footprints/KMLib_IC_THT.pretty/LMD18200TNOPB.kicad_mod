@@ -274,7 +274,7 @@
 		(uuid "f5a316da-0f6f-4cf7-814b-ed21a28d97a0")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_KML_CUSTOM_MODELS}/NDJ0011E.stp"
+	(model "${KMLIB_LOCAL}/3dmodels/NDJ0011E.stp"
 		(offset
 			(xyz -8.5 10 0)
 		)

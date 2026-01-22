@@ -982,7 +982,7 @@
 		(uuid "bbaf3b6f-5333-483f-8460-9f578fef47e0")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/IC_SMD.3dshapes/D0016A.stp"
+	(model "${KMLIB_LOCAL}/3dmodels/IC_SMD.3dshapes/D0016A.stp"
 		(offset
 			(xyz 0 0 0)
 		)

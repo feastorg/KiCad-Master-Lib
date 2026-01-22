@@ -245,7 +245,7 @@
 		(uuid "1da9cddf-3670-427d-a642-780b144768b5")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Connectors.3dshapes/1098167.stp"
+	(model "${KMLIB_LOCAL}/3dmodels/Connectors.3dshapes/1098167.stp"
 		(offset
 			(xyz -4.249999936 -18.99999971 0.5699999843)
 		)

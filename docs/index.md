@@ -1,6 +1,6 @@
 # KiCad Master Library
 
-KiCad Master Library (KML) collects FEAST-specific custom KiCad assets alongside curated upstream vendor libraries. Each third-party library is tracked as a Git submodule so the project can pin known-good revisions while keeping updates straightforward.
+KiCad Master Library (KMLib) collects FEAST-specific custom KiCad assets alongside curated upstream vendor libraries. Each third-party library is tracked as a Git submodule so the project can pin known-good revisions while keeping updates straightforward.
 
 ## Repository layout
 
@@ -18,7 +18,7 @@ Use KiCad **9.x stable** for editing and day-to-day use. These libraries are aut
 
 ## File format notes
 
-KML uses the KiCad 9.x symbol and footprint formats. Avoid depending on the numeric `version` headers inside the library files; KiCad guarantees compatibility within a major series, but a future major release may require migration. Review the 9.0 library format documentation before upgrading the toolchain.
+KMLib uses the KiCad 9.x symbol and footprint formats. Avoid depending on the numeric `version` headers inside the library files; KiCad guarantees compatibility within a major series, but a future major release may require migration. Review the 9.0 library format documentation before upgrading the toolchain.
 
 ## Keeping the libraries current
 

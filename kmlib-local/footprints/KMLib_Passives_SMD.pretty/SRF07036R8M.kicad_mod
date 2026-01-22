@@ -273,7 +273,7 @@
 		(uuid "2aae811e-30eb-4cea-a68b-41db769c6801")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Passives_SMD.3dshapes/SRF0703-6R8M.stp"
+	(model "${KMLIB_LOCAL}/3dmodels/Passives_SMD.3dshapes/SRF0703-6R8M.stp"
 		(offset
 			(xyz 0 0 0)
 		)

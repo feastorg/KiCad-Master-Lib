@@ -649,7 +649,7 @@
 		(uuid "c1741286-ba0e-4f33-8f37-5fd51504bac5")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Connectors.3dshapes/Electrically Isolated EZO Carrier Board.STEP"
+	(model "${KMLIB_LOCAL}/3dmodels/Connectors.3dshapes/Electrically Isolated EZO Carrier Board.STEP"
 		(offset
 			(xyz -8.5 -51.25 -16)
 		)

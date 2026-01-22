@@ -10,7 +10,7 @@ Follow this checklist to install the KiCad Master Library (KML) alongside your K
 
 ## Clone the repository with submodules
 
-Choose any working directory. Placing the checkout under `Documents/KiCad/<major>/footprints` makes it easy to find, but any path works.
+Choose any working directory. Placing the checkout under `Documents/KiCad/<major>` makes it easy to find, but any path works.
 
 ```sh
 git clone --recurse-submodules https://github.com/FEASTorg/KiCad-Master-Lib.git
@@ -26,8 +26,8 @@ git submodule update --init --recursive
 
 1. Launch KiCad.
 2. Open `Preferences -> Configure Paths`.
-3. Add `KICAD_KML_MASTER` pointing to the repository root.
-4. Add `KICAD_KML_CUSTOM_MODELS` pointing to `${KICAD_KML_MASTER}/kmlib-local/3dmodels`.
+3. Add `KICAD_MASTER_LIB` pointing to the repository root.
+4. Add `KMLIB_LOCAL` pointing to `${KICAD_MASTER_LIB}/kmlib-local`.
 5. Save.
 
 Notes:
@@ -39,7 +39,7 @@ Notes:
 
 1. `Preferences -> Manage Symbol Libraries...`
 2. `Global Libraries` tab.
-3. Add each categorized library with `${KICAD_KML_MASTER}/kmlib-local/symbols/` as the base path:
+3. Add each categorized library with `${KMLIB_LOCAL}/symbols/` as the base path:
 
 | Nickname                        | Library File                              |
 | ------------------------------- | ----------------------------------------- |
@@ -61,7 +61,7 @@ Notes:
 
 1. `Preferences -> Manage Footprint Libraries...`
 2. `Global Libraries` tab.
-3. Add each categorized library with `${KICAD_KML_MASTER}/kmlib-local/footprints/` as the base path:
+3. Add each categorized library with `${KMLIB_LOCAL}/footprints/` as the base path:
 
 | Nickname               | Folder                        |
 | ---------------------- | ----------------------------- |
@@ -92,7 +92,7 @@ Refer to each vendor's README for any special steps.
 
 1. Open the **Symbol Editor**, select any KMLib\_\* library, and browse symbols.
 2. Open the **Footprint Editor**, select any KMLib\_\* library, and browse footprints.
-3. Place a footprint on a scratch PCB and open the **3D Viewer** to confirm `${KICAD_KML_CUSTOM_MODELS}` resolves and models appear correctly.
+3. Place a footprint on a scratch PCB and open the **3D Viewer** to confirm `${KMLIB_LOCAL}/3dmodels` resolves and models appear correctly.
 
 ## Keeping your checkout current
 

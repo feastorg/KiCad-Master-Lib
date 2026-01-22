@@ -358,7 +358,7 @@
 		(uuid "0a8b2695-215d-4f6d-9fd7-8570203d40f7")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Connectors.3dshapes/SSQ-115-03-T-S.step"
+	(model "${KMLIB_LOCAL}/3dmodels/Connectors.3dshapes/SSQ-115-03-T-S.step"
 		(offset
 			(xyz 0 0 0)
 		)

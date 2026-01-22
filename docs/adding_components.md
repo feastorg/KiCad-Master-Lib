@@ -67,14 +67,14 @@ The `kmlib-local/` folder contains FEAST's custom KiCad libraries. Components ar
 1. Open **Footprint Editor** and select the appropriate KMLib\_\* library based on component category.
 2. Create the footprint in millimetres. Align the local origin sensibly (pin 1 or part centre).
 3. Add `F.SilkS`, `B.SilkS`, `F.CrtYd`, and `F.Fab` graphics following KiCad conventions.
-4. In **Footprint Properties -> 3D Models**, reference `${KICAD_KML_CUSTOM_MODELS}/<category>/<model-file>`.
+4. In **Footprint Properties -> 3D Models**, reference `${KMLIB_LOCAL}/3dmodels/<category>/<model-file>`.
 5. Verify pad-to-pad spacing against the datasheet.
 6. Run **Tools -> Footprint Checker** and resolve errors.
 
 ## 3) Place the 3D model
 
 1. Put the STEP/WRL model in `kmlib-local/3dmodels/<Category>.3dshapes/` matching the footprint category.
-2. Reference it via the `${KICAD_KML_CUSTOM_MODELS}` variable: `${KICAD_KML_CUSTOM_MODELS}/<Category>.3dshapes/<model-file>`.
+2. Reference using `${KMLIB_LOCAL}/3dmodels`, for example: `${KMLIB_LOCAL}/3dmodels/<Category>.3dshapes/<model-file>`.
 3. Orient/scale in the **3D Models** tab.
 4. Confirm with **3D Viewer**.
 

@@ -385,7 +385,7 @@
 		(uuid "e09c1f1d-0934-4546-908a-eb3b1c8f9ce3")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Connectors.3dshapes/SJ-3524-SMT.step"
+	(model "${KMLIB_LOCAL}/3dmodels/Connectors.3dshapes/SJ-3524-SMT.step"
 		(offset
 			(xyz -3.5 0 2.6)
 		)

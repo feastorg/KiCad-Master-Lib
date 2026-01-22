@@ -106,7 +106,7 @@
 		(uuid "f17c52e6-1cef-4dd8-acfb-3bc0c576aa33")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/TestPoints.3dshapes/5001.stp"
+	(model "${KMLIB_LOCAL}/3dmodels/TestPoints.3dshapes/5001.stp"
 		(offset
 			(xyz 0 0 1.649999951)
 		)

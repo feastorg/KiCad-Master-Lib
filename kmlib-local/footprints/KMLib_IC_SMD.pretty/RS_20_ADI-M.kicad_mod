@@ -1287,7 +1287,7 @@
 		(uuid "8e99b8fa-529f-4fba-b825-7b866791ee94")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/IC_SMD.3dshapes/RS_20_ADI.step"
+	(model "${KMLIB_LOCAL}/3dmodels/IC_SMD.3dshapes/RS_20_ADI.step"
 		(offset
 			(xyz 0 0 0)
 		)

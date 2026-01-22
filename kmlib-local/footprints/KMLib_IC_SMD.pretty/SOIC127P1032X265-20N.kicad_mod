@@ -327,7 +327,7 @@
 		(uuid "b94279c4-10d7-4981-8034-33e9b542ccf7")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/IC_SMD.3dshapes/DS3234S.stp"
+	(model "${KMLIB_LOCAL}/3dmodels/IC_SMD.3dshapes/DS3234S.stp"
 		(offset
 			(xyz 0 0 0)
 		)

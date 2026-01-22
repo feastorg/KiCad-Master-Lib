@@ -333,7 +333,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "${KICAD_MASTER_LIB}/kmlib-local/3dmodels/Passives_SMD.3dshapes/SMT_13N002_TDK.step"
+	(model "${KMLIB_LOCAL}/3dmodels/Passives_SMD.3dshapes/SMT_13N002_TDK.step"
 		(offset
 			(xyz 0 0 0)
 		)
