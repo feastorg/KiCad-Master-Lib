@@ -27,7 +27,7 @@ git submodule update --init --recursive
 1. Launch KiCad.
 2. Open `Preferences -> Configure Paths`.
 3. Add `KICAD_MASTER_LIB` pointing to the repository root.
-4. Add `KMLIB_LOCAL` pointing to `${KICAD_MASTER_LIB}/kmlib-local`.
+4. Add `KMLIB_LOCAL` pointing to `${KICAD_MASTER_LIB}\kmlib-local`.
 5. Save.
 
 Notes:
