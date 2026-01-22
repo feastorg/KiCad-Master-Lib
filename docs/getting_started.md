@@ -10,7 +10,7 @@ Follow this checklist to install the KiCad Master Library (KML) alongside your K
 
 ## Clone the repository with submodules
 
-Choose any working directory. Placing the checkout under `Documents/KiCad/<major>` makes it easy to find, but any path works.
+Choose any working directory. Placing the checkout under `Documents/KiCad/KiCad-Master-Lib` makes it easy to find, but any path works. Placing it within the versioned KiCad installation folder (i.e. placing under `Documents/KiCad/9.0`) may cause issues during upgrades or modifications of your KiCad installation.
 
 ```sh
 git clone --recurse-submodules https://github.com/FEASTorg/KiCad-Master-Lib.git
