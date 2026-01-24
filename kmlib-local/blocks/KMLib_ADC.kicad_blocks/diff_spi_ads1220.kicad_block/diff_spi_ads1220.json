@@ -1,0 +1,5 @@
+{
+"description": "ADS1220 differential ADC.",
+"keywords": "Differential, SPI, ADS1220",
+"fields": {}
+}
