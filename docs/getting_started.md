@@ -63,21 +63,21 @@ Notes:
 2. `Global Libraries` tab.
 3. Add each categorized library with `${KMLIB_LOCAL}/footprints/` as the base path:
 
-| Nickname               | Folder                        |
-| ---------------------- | ----------------------------- |
-| `KMLib_Aesthetic`      | `KMLib_Aesthetic.pretty`      |
-| `KMLib_Boards_Modules` | `KMLib_Boards_Modules.pretty` |
-| `KMLib_Connectors`     | `KMLib_Connectors.pretty`     |
-| `KMLib_IC_SMD`         | `KMLib_IC_SMD.pretty`         |
-| `KMLib_IC_THT`         | `KMLib_IC_THT.pretty`         |
-| `KMLib_Mounting`       | `KMLib_Mounting.pretty`       |
-| `KMLib_Passives_SMD`   | `KMLib_Passives_SMD.pretty`   |
-| `KMLib_Passives_THT`   | `KMLib_Passives_THT.pretty`   |
-| `KMLib_Proto`          | `KMLib_Proto.pretty`          |
+| Nickname                 | Folder                          |
+| ------------------------ | ------------------------------- |
+| `KMLib_Aesthetic`        | `KMLib_Aesthetic.pretty`        |
+| `KMLib_Boards_Modules`   | `KMLib_Boards_Modules.pretty`   |
+| `KMLib_Connectors`       | `KMLib_Connectors.pretty`       |
+| `KMLib_IC_SMD`           | `KMLib_IC_SMD.pretty`           |
+| `KMLib_IC_THT`           | `KMLib_IC_THT.pretty`           |
+| `KMLib_Mounting`         | `KMLib_Mounting.pretty`         |
+| `KMLib_Passives_SMD`     | `KMLib_Passives_SMD.pretty`     |
+| `KMLib_Passives_THT`     | `KMLib_Passives_THT.pretty`     |
+| `KMLib_Proto`            | `KMLib_Proto.pretty`            |
 | `KMLib_Proto-Decorators` | `KMLib_Proto-Decorators.pretty` |
-| `KMLib_Relays`         | `KMLib_Relays.pretty`         |
-| `KMLib_Switches`       | `KMLib_Switches.pretty`       |
-| `KMLib_TestPoints`     | `KMLib_TestPoints.pretty`     |
+| `KMLib_Relays`           | `KMLib_Relays.pretty`           |
+| `KMLib_Switches`         | `KMLib_Switches.pretty`         |
+| `KMLib_TestPoints`       | `KMLib_TestPoints.pretty`       |
 
 ## Register design block libraries
 
@@ -85,18 +85,18 @@ Notes:
 2. `Global Libraries` tab.
 3. Add each categorized library with `${KMLIB_LOCAL}/blocks/` as the base path:
 
-| Nickname                    | Folder                               |
-| --------------------------- | ------------------------------------ |
-| `KMLib_ADC`                 | `KMLib_ADC.kicad_blocks`             |
-| `KMLib_Analog`              | `KMLib_Analog.kicad_blocks`          |
-| `KMLib_Digital`             | `KMLib_Digital.kicad_blocks`         |
-| `KMLib_Interface`           | `KMLib_Interface.kicad_blocks`       |
-| `KMLib_Memory`              | `KMLib_Memory.kicad_blocks`          |
-| `KMLib_Microcontroller`     | `KMLib_Microcontroller.kicad_blocks` |
-| `KMLib_Networks_Active`     | `KMLib_Networks_Active.kicad_blocks` |
-| `KMLib_Networks_Passive`    | `KMLib_Networks_Passive.kicad_blocks`|
-| `KMLib_Power`               | `KMLib_Power.kicad_blocks`           |
-| `KMLib_Sensor`              | `KMLib_Sensor.kicad_blocks`          |
+| Nickname                 | Folder                                |
+| ------------------------ | ------------------------------------- |
+| `KMLib_ADC`              | `KMLib_ADC.kicad_blocks`              |
+| `KMLib_Analog`           | `KMLib_Analog.kicad_blocks`           |
+| `KMLib_Digital`          | `KMLib_Digital.kicad_blocks`          |
+| `KMLib_Interface`        | `KMLib_Interface.kicad_blocks`        |
+| `KMLib_Memory`           | `KMLib_Memory.kicad_blocks`           |
+| `KMLib_Microcontroller`  | `KMLib_Microcontroller.kicad_blocks`  |
+| `KMLib_Networks_Active`  | `KMLib_Networks_Active.kicad_blocks`  |
+| `KMLib_Networks_Passive` | `KMLib_Networks_Passive.kicad_blocks` |
+| `KMLib_Power`            | `KMLib_Power.kicad_blocks`            |
+| `KMLib_Sensor`           | `KMLib_Sensor.kicad_blocks`           |
 
 ## Optional: register vendor libraries
 
