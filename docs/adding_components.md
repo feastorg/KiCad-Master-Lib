@@ -86,7 +86,7 @@ The nRF54L design blocks are from [hlord2000/nordic-lib-kicad](https://github.co
 
 ## Working with Design Blocks
 
-Design blocks are reusable schematic fragments managed through KiCad's Design Blocks panel. They allow you to save and reuse circuit designs across projects.
+Design blocks are reusable schematic fragments managed through KiCad's Design Blocks panel. They allow you to save and reuse circuit designs across projects. See the KiCad documentation for more details: [KiCad Design Blocks](https://docs.kicad.org/9.0/ca/eeschema/eeschema.html#schematic-design-blocks).
 
 ### Using design blocks
 
