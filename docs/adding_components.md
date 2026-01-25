@@ -36,19 +36,21 @@ The `kmlib-local/` folder contains FEAST's custom KiCad libraries. Components ar
 
 `.pretty` directories are prefixed with "KMLib\_" while `.3dshapes` folders have no prefix. They are organized into the following categories:
 
-| Category           | Includes                                                            |
-| ------------------ | ------------------------------------------------------------------- |
-| **Aesthetic**      | Logos, labels, decorative elements (no 3dmodels)                    |
-| **Boards_Modules** | Discrete boards, modules, shields                                   |
-| **Passives_SMD**   | 0402, 0603, 0805, 1206, 1210, 1812 resistors, capacitors, inductors |
-| **Passives_THT**   | Resistors, capacitors, inductors                                    |
-| **IC_SMD**         | SOIC, TSSOP, QFN, BGA packages                                      |
-| **IC_THT**         | DIP, SIP packages                                                   |
-| **Connectors**     | Headers, JST, USB, terminals                                        |
-| **Switches**       | Tactile, rotary, DIP switches                                       |
-| **Relays**         | Signal and power relays                                             |
-| **TestPoints**     | Various test point footprints                                       |
-| **Mounting**       | Mounting holes, standoffs                                           |
+| Category             | Includes                                                            |
+| -------------------- | ------------------------------------------------------------------- |
+| **Aesthetic**        | Logos, labels, decorative elements (no 3dmodels)                    |
+| **Boards_Modules**   | Discrete boards, modules, shields                                   |
+| **Passives_SMD**     | 0402, 0603, 0805, 1206, 1210, 1812 resistors, capacitors, inductors |
+| **Passives_THT**     | Resistors, capacitors, inductors                                    |
+| **IC_SMD**           | SOIC, TSSOP, QFN, BGA packages                                      |
+| **IC_THT**           | DIP, SIP packages                                                   |
+| **Connectors**       | Headers, JST, USB, terminals                                        |
+| **Switches**         | Tactile, rotary, DIP switches                                       |
+| **Relays**           | Signal and power relays                                             |
+| **TestPoints**       | Various test point footprints                                       |
+| **Mounting**         | Mounting holes, standoffs                                           |
+| **Proto**            | Prototyping footprints for hand soldering and testing               |
+| **Proto-Decorators** | Prototyping decorator elements such as those for solder tracing     |
 
 ### Design Blocks
 
