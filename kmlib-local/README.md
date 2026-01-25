@@ -8,6 +8,7 @@ FEAST's custom KiCad library organized into categorized KMLib\_\* symbol and foo
 kmlib-local/
 ├── symbols/
 ├── footprints/
+├── blocks/
 └── 3dmodels/
 ```
 

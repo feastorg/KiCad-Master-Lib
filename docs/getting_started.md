@@ -77,6 +77,25 @@ Notes:
 | `KMLib_Switches`       | `KMLib_Switches.pretty`       |
 | `KMLib_TestPoints`     | `KMLib_TestPoints.pretty`     |
 
+## Register design block libraries
+
+1. `Preferences -> Manage Design Block Libraries...`
+2. `Global Libraries` tab.
+3. Add each categorized library with `${KMLIB_LOCAL}/blocks/` as the base path:
+
+| Nickname                    | Folder                               |
+| --------------------------- | ------------------------------------ |
+| `KMLib_ADC`                 | `KMLib_ADC.kicad_blocks`             |
+| `KMLib_Analog`              | `KMLib_Analog.kicad_blocks`          |
+| `KMLib_Digital`             | `KMLib_Digital.kicad_blocks`         |
+| `KMLib_Interface`           | `KMLib_Interface.kicad_blocks`       |
+| `KMLib_Memory`              | `KMLib_Memory.kicad_blocks`          |
+| `KMLib_Microcontroller`     | `KMLib_Microcontroller.kicad_blocks` |
+| `KMLib_Networks_Active`     | `KMLib_Networks_Active.kicad_blocks` |
+| `KMLib_Networks_Passive`    | `KMLib_Networks_Passive.kicad_blocks`|
+| `KMLib_Power`               | `KMLib_Power.kicad_blocks`           |
+| `KMLib_Sensor`              | `KMLib_Sensor.kicad_blocks`          |
+
 ## Optional: register vendor libraries
 
 Add only what you need to keep tables manageable. Typical locations:
@@ -92,7 +111,8 @@ Refer to each vendor's README for any special steps.
 
 1. Open the **Symbol Editor**, select any KMLib\_\* library, and browse symbols.
 2. Open the **Footprint Editor**, select any KMLib\_\* library, and browse footprints.
-3. Place a footprint on a scratch PCB and open the **3D Viewer** to confirm `${KMLIB_LOCAL}/3dmodels` resolves and models appear correctly.
+3. In the **Schematic Editor**, use **Place -> Add Design Block** to browse available design blocks from the KMLib\_\* block libraries.
+4. Place a footprint on a scratch PCB and open the **3D Viewer** to confirm `${KMLIB_LOCAL}/3dmodels` resolves and models appear correctly.
 
 ## Keeping your checkout current
 
