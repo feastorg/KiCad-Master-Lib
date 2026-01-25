@@ -1,11 +1,11 @@
-(footprint "Proto_Conn_TFC-WPAPR-08"
+(footprint "SD_Card_Socket_TFC-WPAPR-08_TH_AnnularPad"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "OFFSET X-> -0.950MM")
 	(tags "OFFSET X-> -0.950MM")
-	(property "Reference" ""
+	(property "Reference" "Ref**"
 		(at -9.15416 -1.5875 90)
 		(layer "B.SilkS")
 		(uuid "3fc19cb0-ba29-469e-88f6-7d3486331cff")
@@ -17,7 +17,7 @@
 			(justify mirror)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at -11.05916 -0.9525 90)
 		(layer "B.SilkS")
 		(uuid "fea6e1bb-1554-4c76-85b0-717ac07c0136")

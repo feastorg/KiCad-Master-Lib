@@ -1,9 +1,9 @@
-(footprint "Proto_Tactile_Button"
+(footprint "Tactile_Button_TH_AnnularPad"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(property "Reference" ""
+	(property "Reference" "Ref**"
 		(at 0 10.16 0)
 		(layer "F.SilkS")
 		(uuid "147c0177-77f6-47b9-a1e3-593ca4b070d4")
@@ -14,7 +14,7 @@
 			)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at 0 -7.62 0)
 		(layer "F.Fab")
 		(uuid "8f2ba246-0846-44e6-b830-9d1e56cb29cf")

@@ -1,7 +1,7 @@
-(footprint "Proto_Grid_5x20"
-	(version 20240108)
+(footprint "Grid_TH_AnnularPad_5x20_2.54mm"
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
@@ -15,25 +15,12 @@
 			)
 		)
 	)
-	(property "Value" "Proto_Grid_5x20"
+	(property "Value" "Grid_TH_AnnularPad_5x20_2.54mm"
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "28078312-fc64-4b5a-93ab-51d68c921980")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "04720444-765e-4a3d-8428-5e6c8a5d6821")
 		(effects
 			(font
 				(size 1 1)
@@ -868,4 +855,5 @@
 		(remove_unused_layers no)
 		(uuid "9eade6ea-fa1e-4cf9-b794-35e652c482ce")
 	)
+	(embedded_fonts no)
 )

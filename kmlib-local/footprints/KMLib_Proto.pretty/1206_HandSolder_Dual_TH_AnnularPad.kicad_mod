@@ -1,11 +1,11 @@
-(footprint "Proto_1206_Pads_x2_LED_HandSolder"
+(footprint "1206_HandSolder_Dual_TH_AnnularPad"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Resistor SMD 0805, hand soldering")
 	(tags "resistor 0805")
-	(property "Reference" ""
+	(property "Reference" "Ref**"
 		(at -3.6875 -7.9375 90)
 		(layer "F.SilkS")
 		(uuid "3ba20178-5825-4aaf-bd5e-07066e9d791c")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at -2.54 -0.44 0)
 		(layer "F.Fab")
 		(uuid "23d7619c-8705-4182-8b84-56e2613802cf")

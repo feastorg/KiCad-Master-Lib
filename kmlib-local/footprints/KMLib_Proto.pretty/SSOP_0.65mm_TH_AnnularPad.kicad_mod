@@ -1,9 +1,9 @@
-(footprint "Proto_SSOP_0.65"
+(footprint "SSOP_0.65mm_TH_AnnularPad"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(property "Reference" ""
+	(property "Reference" "Ref**"
 		(at 0.0508 2.54 0)
 		(layer "F.SilkS")
 		(uuid "c24e96cf-75f9-4f32-bb55-65655c2d715f")
@@ -14,7 +14,7 @@
 			)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at -0.0254 -2.9464 0)
 		(layer "F.Fab")
 		(uuid "5b4743f1-31dc-493c-97a4-85f6e2deb407")

@@ -1,4 +1,4 @@
-(footprint "Proto_USB_Micro-B_Jing"
+(footprint "Micro-B_TH_AnnularPad"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -18,7 +18,7 @@
 			(justify left)
 		)
 	)
-	(property "Value" "Proto_USB_Micro-B_Jing"
+	(property "Value" "Micro-B_TH_AnnularPad"
 		(at 0.05 4.65 180)
 		(layer "F.Fab")
 		(uuid "2c1f0c99-6667-46ad-af85-eb0b88cdf4f3")
