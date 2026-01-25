@@ -50,7 +50,7 @@ The `kmlib-local/` folder contains FEAST's custom KiCad libraries. Components ar
 | **TestPoints**       | Various test point footprints                                       |
 | **Mounting**         | Mounting holes, standoffs                                           |
 | **Proto**            | Prototyping footprints for hand soldering and testing               |
-| **Proto-Decorators** | Prototyping decorator elements such as those for solder tracing     |
+| **Proto_Decorators** | Prototyping decorator elements such as those for solder tracing     |
 
 ### Design Blocks
 
