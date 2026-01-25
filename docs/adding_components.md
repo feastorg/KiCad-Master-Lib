@@ -82,6 +82,8 @@ They are categorized as follows:
 
 Several of the design blocks derived from: [williamweatherholtz/kicad_subs](https://github.com/williamweatherholtz/kicad_subs/tree/master).
 
+The nRF54L design blocks are from [hlord2000/nordic-lib-kicad](https://github.com/hlord2000/nordic-lib-kicad).
+
 ## Working with Design Blocks
 
 Design blocks are reusable schematic fragments managed through KiCad's Design Blocks panel. They allow you to save and reuse circuit designs across projects.
