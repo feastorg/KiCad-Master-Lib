@@ -1,11 +1,11 @@
-(footprint "Proto_TQFP_upto100_0.50"
+(footprint "TQFP_0.50mm_32-100_TH_AnnularPad"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "100-Lead Plastic Thin Quad Flatpack (PF) - 14x14x1 mm Body 2.00 mm Footprint [TQFP] (see Microchip Packaging Specification 00000049BS.pdf)")
 	(tags "QFP 0.5")
-	(property "Reference" ""
+	(property "Reference" "Ref**"
 		(at 0 -9.45 0)
 		(layer "F.SilkS")
 		(uuid "623f71c6-0506-42bc-b01e-c6e6210f9280")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at 0 9.45 0)
 		(layer "F.Fab")
 		(uuid "57b571c7-6c40-42bd-b8a2-65c96c661137")

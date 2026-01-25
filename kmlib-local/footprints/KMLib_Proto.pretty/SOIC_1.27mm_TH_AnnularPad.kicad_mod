@@ -1,9 +1,9 @@
-(footprint "Proto_SOIC_1.27mm"
+(footprint "SOIC_1.27mm_TH_AnnularPad"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(property "Reference" ""
+	(property "Reference" "Ref**"
 		(at -0.635 7.62 0)
 		(layer "F.SilkS")
 		(uuid "2759dcc4-3a0f-43d8-ac74-858dbacad64c")
@@ -14,7 +14,7 @@
 			)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at -1.26 -7.96 0)
 		(layer "F.Fab")
 		(uuid "891220a8-8da9-4e8a-a6fb-32d2b8dc81ab")

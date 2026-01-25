@@ -1,11 +1,11 @@
-(footprint "Proto_SOT89-3"
+(footprint "SOT89-3_TH_AnnularPad"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "SOT89-3, Housing, Handsoldering,")
 	(tags "SOT89-3, Housing, Handsoldering,")
-	(property "Reference" ""
+	(property "Reference" "Ref**"
 		(at -0.0508 -5.00126 180)
 		(layer "F.SilkS")
 		(uuid "c729504f-aacb-4fa6-abf4-610ad36e2e61")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at -0.14986 5.30098 180)
 		(layer "F.Fab")
 		(uuid "93d5607d-7974-41f9-a6ad-121f25235dc3")

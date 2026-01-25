@@ -1,11 +1,11 @@
-(footprint "Proto_SOT-23-6"
+(footprint "SOT-23-6_TH_AnnularPad"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "6-pin SOT-23 package")
 	(tags "SOT-23-6")
-	(property "Reference" ""
+	(property "Reference" "Ref**"
 		(at 0 -2.9 0)
 		(layer "F.SilkS")
 		(uuid "d6a29304-674a-4aa8-9ede-21f68a3ac694")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at 0 3.81 0)
 		(layer "F.Fab")
 		(uuid "6b8eca2b-472c-43ea-9323-87e15511d9a8")

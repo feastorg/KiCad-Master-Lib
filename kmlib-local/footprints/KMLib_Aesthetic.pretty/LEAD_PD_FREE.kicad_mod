@@ -1,4 +1,4 @@
-(footprint "LOGO_PBFREE"
+(footprint "LEAD_PD_FREE"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -14,7 +14,7 @@
 			)
 		)
 	)
-	(property "Value" "LOGO_PBFREE"
+	(property "Value" "LEAD_PD_FREE"
 		(at 0.05588 3.15214 180)
 		(layer "F.Fab")
 		(uuid "1e3f81f6-9c7f-4696-aafc-70f20b9a66f8")

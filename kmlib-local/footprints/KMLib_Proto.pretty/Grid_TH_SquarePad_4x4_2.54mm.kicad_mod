@@ -1,4 +1,4 @@
-(footprint "Proto_Grid_4x4_2.54mm_Square"
+(footprint "Grid_TH_SquarePad_4x4_2.54mm"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")

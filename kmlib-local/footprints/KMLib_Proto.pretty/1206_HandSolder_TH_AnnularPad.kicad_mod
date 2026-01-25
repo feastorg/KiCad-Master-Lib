@@ -1,4 +1,4 @@
-(footprint "Proto_1206_Pads_1.42x1.75mm_HandSolder"
+(footprint "1206_HandSolder_TH_AnnularPad"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "Proto_1206_Pads_1.42x1.75mm_HandSolder"
+	(property "Value" "1206_HandSolder_TH_AnnularPad"
 		(at 0 1.82 0)
 		(layer "F.Fab")
 		(uuid "dc2654f2-9205-4d02-9da7-55c3de722fe8")

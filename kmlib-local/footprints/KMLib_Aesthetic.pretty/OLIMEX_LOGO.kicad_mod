@@ -1,4 +1,4 @@
-(footprint "OLIMEX_LOGO_TB"
+(footprint "OLIMEX_LOGO"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -15,7 +15,7 @@
 			)
 		)
 	)
-	(property "Value" "OLIMEX_LOGO_TB"
+	(property "Value" "OLIMEX_LOGO"
 		(at -1.6637 3.7084 180)
 		(layer "F.Fab")
 		(hide yes)

@@ -1,4 +1,4 @@
-(footprint "Proto_LQFP_upto64_0.8mm"
+(footprint "LQFP_0.8mm_32-64"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
