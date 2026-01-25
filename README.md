@@ -1,8 +1,12 @@
 # KiCad-Master-Lib
 
-An attempt to make a master KiCad library for symbols and footprints.
+An attempt to make a master KiCad library for symbols and footprints as well as their associated 3D models and a collection of design blocks.
 
-Hopefully this prevents me from going completely insane - CKB
+This is mainly to help manage the libraries used by FEAST (https://feastorg.github.io) in a single place for easy updating and sharing across projects.
+
+If you are looking for `KiCad-Hierarchical-Designs`, that repository has been archived and all relevant content has been moved here under `kmlib-local/blocks/`.
+
+Hopefully this prevents me from going completely insane. - CKB
 
 ## Quick Start
 
