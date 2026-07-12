@@ -23,7 +23,7 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-vendor
+vendor/bundle
 
 # Ignore OS-specific files
 .DS_Store
