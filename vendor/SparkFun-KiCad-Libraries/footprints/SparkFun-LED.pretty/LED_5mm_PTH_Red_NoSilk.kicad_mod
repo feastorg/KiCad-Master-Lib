@@ -55,24 +55,14 @@
 	)
 	(attr through_hole)
 	(fp_line
-		(start 2.54 1.905)
-		(end 2.54 -1.905)
+		(start 2.6 1.499998)
+		(end 2.6 -1.5)
 		(stroke
-			(width 0.2032)
+			(width 0.254)
 			(type solid)
 		)
 		(layer "F.Fab")
 		(uuid "a9a08029-aa18-421b-89e0-7a34b340b9aa")
-	)
-	(fp_line
-		(start 2.54 1.905)
-		(end 2.54 -1.905)
-		(stroke
-			(width 0.2032)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "c88edf43-7592-4181-b958-c4cd41695e51")
 	)
 	(fp_arc
 		(start -2.159 0)
@@ -141,9 +131,9 @@
 		(uuid "f1540833-6946-4a8e-a0f5-4b7a9092b075")
 	)
 	(fp_arc
-		(start 2.54 1.905)
-		(mid -3.175 0)
-		(end 2.54 -1.905)
+		(start 2.6 1.5)
+		(mid -3.001666 0)
+		(end 2.6 -1.5)
 		(stroke
 			(width 0.254)
 			(type solid)
