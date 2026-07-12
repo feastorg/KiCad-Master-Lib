@@ -1,0 +1,65 @@
+# Vendored upstream KiCad libraries.
+#
+# These libraries are COPIED INTO this repo (not submoduled) so that they can be
+# patched locally, cloned without --recursive, and used offline. In exchange, we
+# take on the job of tracking upstream ourselves.
+#
+# `commit` is the upstream commit this repo's copy corresponds to. It is moved
+# forward deliberately, by a human, after review — never automatically.
+#
+# The daily `upstream-drift` workflow compares each `commit` against the tip of
+# `ref` upstream and opens a tracking issue per library that has moved.
+#
+# To re-sync a library after reviewing its drift issue:
+#     python3 scripts/vendor_sync.py <name> --to <upstream-sha>
+#
+# Local modifications to vendored trees are allowed. `vendor_sync.py` performs a
+# three-way merge against the previous upstream state, so local edits survive a
+# re-sync (conflicts are reported, not silently dropped). Prefer upstreaming a
+# fix over carrying it here.
+
+schema_version: "1.0"
+
+libraries:
+  - name: SparkFun-KiCad-Libraries
+    path: vendor/SparkFun-KiCad-Libraries
+    upstream: https://github.com/sparkfun/SparkFun-KiCad-Libraries.git
+    ref: main
+    commit: 42e5152fae58e8c6188150a4feac7a189def5a12
+    synced: "2026-07-12"
+    license: CC-BY-4.0
+    # GitHub reports NOASSERTION; the licence is stated in the repo's README.
+    license_source: README.md
+    notes: >
+      SparkFun asks that you email them with a link to the product when you begin
+      selling a device that uses one of their footprints.
+
+  - name: OPL_Kicad_Library
+    path: vendor/OPL_Kicad_Library
+    upstream: https://github.com/Seeed-Studio/OPL_Kicad_Library.git
+    ref: master
+    commit: d3392376d89367264e07f7ee11e191fb6344e1b9
+    synced: "2026-07-12"
+    license: CC-BY-SA-4.0
+    license_source: github-api
+
+  - name: digikey-kicad-library
+    path: vendor/digikey-kicad-library
+    upstream: https://github.com/Digi-Key/digikey-kicad-library.git
+    ref: master
+    commit: d4bd68f42e6ccc474526811a853a03692e170b58
+    synced: "2026-07-12"
+    license: CC-BY-SA-4.0
+    license_source: LICENSE.md
+    notes: >
+      CC-BY-SA-4.0 with a stated exception; see vendor/digikey-kicad-library/LICENSE.md
+      for the exact terms before redistributing.
+
+  - name: arduino-kicad-library
+    path: vendor/arduino-kicad-library
+    upstream: https://github.com/Alarm-Siren/arduino-kicad-library.git
+    ref: master
+    commit: 1075811e04a7a0ec7645a3590f179655e027c650
+    synced: "2026-07-12"
+    license: CC-BY-SA-4.0
+    license_source: github-api
