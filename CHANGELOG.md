@@ -11,6 +11,11 @@ grouped by dated development era rather than by version.
 
 ## [Unreleased]
 
+### Added
+
+- `LTC4311ISC6-TRMPBF` (I2C accelerator) — symbol, `SOT-6_SC_LIT` footprint and its
+  variants, and 3D model.
+
 ### Removed
 
 - **Git LFS.** `.gitattributes` tracked `*.step` and `*.stl` through LFS, but only 14 files
