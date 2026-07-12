@@ -4,42 +4,14 @@ This guide documents the workflow for adding or modifying parts in `kmlib-local`
 
 ## Naming rules
 
-These are not style preferences. Each one exists because breaking it caused a real failure.
-
-**No spaces in library, symbol, or footprint names.** Names appear verbatim in `lib_id`
-strings, shell commands, CLI arguments and scripts. A footprint called `Thermal Pad` has to
-be quoted everywhere forever, and is a standing invitation to a bug. Use `Thermal_Pad`.
-
-**Prefer the manufacturer part number**, e.g. `AP63205WU-7_Buck_Regulator`,
-`031-5431-1010_BNC_Coaxial_Right_Angle`. It is what makes a part identifiable later — when
-you are staring at a board that references a library that no longer exists, an MPN is the
-only thing that tells you what the part actually was.
-
-**Never file a first-party part under a vendor library's nickname.** Putting a FEAST part
-in `SparkFun-Connector` does not make it a SparkFun part; it makes it a part that vanishes
-the moment anyone re-syncs that vendor library. The BREAD slice-bus connector — the
-physical embodiment of the BREADS standard — was lost this way, and survived only as
-geometry embedded in one board file.
-
-**Renaming a symbol means renaming its sub-units.** A symbol's sub-units carry the bare
-item name:
-
-```
-(symbol "KMLib_IC_Power:AP63205WU-7_Buck_Regulator"
-    (symbol "AP63205WU-7_Buck_Regulator_0_1" ...)
-```
-
-Rename the symbol and leave the sub-units behind, and **KiCad refuses to open any
-schematic using it** (`Invalid symbol unit name prefix`). The KiCad symbol editor handles
-this for you; hand-editing or scripting a rename does not. Worse, `kicad-cli` prints
-"Failed to load schematic" and still **exits 0**, so an unloadable schematic scores as
-"zero ERC violations" to any script that trusts the exit code.
-
-## Before you start
-
-- Collect the component datasheet, recommended footprint, and mechanical model.
-- Use a unique, descriptive name. Prefer the manufacturer part number (for example `031-5431-1010`).
-- Check for similar parts to avoid duplicates.
+- **No spaces** in library, symbol or footprint names. Names appear verbatim in `lib_id`
+  strings and on command lines. Use `Thermal_Pad`, not `Thermal Pad`.
+- **Prefer the manufacturer part number**, e.g. `AP63205WU-7_Buck_Regulator`.
+- **Do not put FEAST parts in a vendor library.** `vendor/` is reserved for upstream
+  content, and is overwritten on sync. First-party parts belong in `kmlib-local`.
+- **Renaming a symbol also renames its sub-units.** A symbol's sub-units carry the bare
+  item name (`ITEM_0_1` inside `LIB:ITEM`); if they disagree, KiCad refuses to open any
+  schematic using the symbol. The Symbol Editor handles this; hand-editing does not.
 
 ## kmlib-local organization
 

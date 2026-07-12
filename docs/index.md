@@ -1,15 +1,17 @@
 # KiCad Master Library
 
-KiCad Master Library (KMLib) collects FEAST-specific custom KiCad assets alongside curated
-upstream vendor libraries, so every FEAST design resolves its parts from one pinned place.
+KiCad Master Library (KMLib) collects FEAST-specific KiCad assets alongside curated upstream
+vendor libraries, so every FEAST design resolves its parts from one place.
 
 ## Repository layout
 
 ```
 kmlib-local/     FEAST symbols, footprints, 3D models and design blocks (KMLib_* libraries)
-vendor/          upstream libraries, vendored (see vendor.yaml)
+vendor/          upstream libraries, pinned in vendor.yaml
 scripts/         library-table generation, vendoring, drift detection
 ```
+
+## Library tables
 
 | File | Registers |
 | --- | --- |
@@ -17,50 +19,26 @@ scripts/         library-table generation, vendoring, drift detection
 | `kmlib.sym-lib-table` | 46 symbol libraries |
 | `kmlib.design-block-lib-table` | 10 design-block libraries |
 
-Every URI is written relative to `${KICAD_MASTER_LIB}`, covering both `kmlib-local` and the
-vendored upstreams. **A clean clone resolves everything**, on any machine, with no
-per-developer KiCad configuration.
+Every URI is relative to `${KICAD_MASTER_LIB}` and covers both `kmlib-local` and the
+vendored upstreams, so a clean clone resolves everything with no per-machine setup.
 
-That is the point. Library resolution that lives only in someone's global KiCad config
-cannot be reproduced from a clean checkout — so a board cannot be rebuilt from source, and
-CI cannot verify it.
+Regenerate with `python3 scripts/gen_lib_tables.py`.
 
 ## Supported KiCad version
 
-**KiCad 10.x stable.** Authored and tested against KiCad 10.0.
+KiCad 10.x stable.
 
-Note that the format-version header inside a board or library file is the *only* reliable
-signal of what wrote it — and it is easy to over-read. A board saved by KiCad 9 opens fine
-in KiCad 10, and a board merely *opened* in KiCad 10 and re-saved is not thereby migrated
-in any deeper sense: its library references can still be broken. Check, don't infer.
+## Upstream libraries
 
-## Vendored upstream libraries
+Vendored under `vendor/` and pinned in [`vendor.yaml`](../vendor.yaml). A daily
+[`upstream-drift`](../.github/workflows/upstream-drift.yml) workflow opens a tracking issue
+when an upstream moves past its pin; a human reviews it and advances the pin with
+`scripts/vendor_sync.py`.
 
-Upstream libraries are **vendored as plain files**, not git submodules — so they can be
-patched locally, cloned without `--recursive`, and used offline.
-
-[`vendor.yaml`](../vendor.yaml) is the manifest: upstream URL, tracked ref, **pinned
-commit**, and licence for each.
-
-Clone and update with plain git:
-
-```sh
-git clone https://github.com/feastorg/KiCad-Master-Lib.git
-git pull origin main
-```
-
-### Upstream drift is tracked, never automatic
-
-A daily [`upstream-drift`](../.github/workflows/upstream-drift.yml) workflow asks each
-upstream whether it has moved past our pin and opens **one tracking issue per drifted
-library**. A human reviews it, runs `scripts/vendor_sync.py`, and moves the pin forward
-deliberately.
-
-**Nothing syncs on its own — by design.** For PCB libraries, a footprint silently changing
-under a board you have already fabricated is a manufacturing hazard, not a feature. The
-library is curated and frozen; the pin is what makes a design reproducible.
+Nothing syncs automatically. A footprint that changes under an already-fabricated board is
+a manufacturing problem, so the pin is deliberate.
 
 ## Next steps
 
-- [Getting Started](getting_started) — install the libraries and configure KiCad.
-- [Adding New Components](adding_components) — contribute new parts to `kmlib-local`.
+- [Getting Started](getting_started) — install and configure.
+- [Adding New Components](adding_components) — contribute parts to `kmlib-local`.
