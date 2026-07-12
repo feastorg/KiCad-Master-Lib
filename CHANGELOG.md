@@ -29,6 +29,9 @@ grouped by dated development era rather than by version.
 ### Changed
 
 - Documentation updated for KiCad 10, the committed library tables, and vendoring.
+  `KMLIB_LOCAL` is documented as `${KICAD_MASTER_LIB}/kmlib-local` with a forward slash;
+  the backslash previously given does not resolve on Linux or macOS, and KiCad reports no
+  error when it fails — 3D models simply do not appear.
 
 ---
 

@@ -4,7 +4,7 @@
 
 - KiCad 10.x stable
 - Git 2.25+
-- ~335 MB disk (~73 MB if you exclude 3D models — see below)
+- ~356 MB disk (~73 MB if you exclude 3D models — see below)
 
 ## Clone
 
