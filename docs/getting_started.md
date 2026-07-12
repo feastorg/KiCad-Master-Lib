@@ -1,128 +1,150 @@
 # Getting Started
 
-Follow this checklist to install the KiCad Master Library (KML) alongside your KiCad environment.
+Install the KiCad Master Library (KMLib) and point KiCad at it.
 
 ## Requirements
 
-- **KiCad 9.x stable**. Tested against 9.0 series releases. Earlier majors (8.x and older) are not supported for editing these libraries.
-- Git 2.25+ with submodule support.
-- Disk space: ~400 MB for the full checkout with submodules.
+- **KiCad 10.x stable.** These libraries are authored and tested against KiCad 10.0.
+- Git 2.25+.
+- Disk space: ~335 MB for a full checkout (~260 MB of that is 3D models — see
+  [Cloning without 3D models](#cloning-without-3d-models) if you don't need them).
 
-## Clone the repository with submodules
-
-Choose any working directory. Placing the checkout under `Documents/KiCad/KiCad-Master-Lib` makes it easy to find, but any path works. Placing it within the versioned KiCad installation folder (i.e. placing under `Documents/KiCad/9.0`) may cause issues during upgrades or modifications of your KiCad installation.
-
-```sh
-git clone --recurse-submodules https://github.com/feastorg/KiCad-Master-Lib.git
-```
-
-Already cloned? Bring submodules up to date from the repo root:
+## Clone
 
 ```sh
-git submodule update --init --recursive
+git clone https://github.com/feastorg/KiCad-Master-Lib.git
 ```
 
-## Configure KiCad path variables
+**No `--recurse-submodules`.** Upstream vendor libraries used to be git submodules; they
+are now vendored as plain files under `vendor/`. See
+[Vendored upstream libraries](#vendored-upstream-libraries).
 
-1. Launch KiCad.
-2. Open `Preferences -> Configure Paths`.
-3. Add `KICAD_MASTER_LIB` pointing to the repository root.
-4. Add `KMLIB_LOCAL` pointing to `${KICAD_MASTER_LIB}\kmlib-local`.
-5. Save.
+## Configure KiCad
 
-Notes:
+### 1. Path variables
 
-- Custom environment variables are the recommended way to reference third-party assets and 3D models so paths remain portable across systems.
-- Some built-in variables (for KiCad's official libraries) are versioned per major release; custom variables like the two above are user-defined and stable across updates.
+`Preferences → Configure Paths`:
 
-## Register symbol libraries
+| Variable | Value |
+| --- | --- |
+| `KICAD_MASTER_LIB` | the repository root |
+| `KMLIB_LOCAL` | `${KICAD_MASTER_LIB}/kmlib-local` |
 
-1. `Preferences -> Manage Symbol Libraries...`
-2. `Global Libraries` tab.
-3. Add each categorized library with `${KMLIB_LOCAL}/symbols/` as the base path:
+> **Use a forward slash.** An earlier version of this page said
+> `${KICAD_MASTER_LIB}\kmlib-local`, with a **backslash**. On Linux and macOS that does
+> not resolve — and because KiCad reports nothing, the only symptom is that 3D models
+> silently fail to appear. 55 KMLib footprints reference `${KMLIB_LOCAL}` for their
+> models. Windows accepts a forward slash too, so always use `/`.
 
-| Nickname                        | Library File                              |
-| ------------------------------- | ----------------------------------------- |
-| `KMLib_Aesthetic`               | `KMLib_Aesthetic.kicad_sym`               |
-| `KMLib_Connectors`              | `KMLib_Connectors.kicad_sym`              |
-| `KMLib_Discrete_Semiconductors` | `KMLib_Discrete_Semiconductors.kicad_sym` |
-| `KMLib_Electromechanical`       | `KMLib_Electromechanical.kicad_sym`       |
-| `KMLib_IC_Analog`               | `KMLib_IC_Analog.kicad_sym`               |
-| `KMLib_IC_Digital`              | `KMLib_IC_Digital.kicad_sym`              |
-| `KMLib_IC_MCU_MPU`              | `KMLib_IC_MCU_MPU.kicad_sym`              |
-| `KMLib_IC_Power`                | `KMLib_IC_Power.kicad_sym`                |
-| `KMLib_Misc`                    | `KMLib_Misc.kicad_sym`                    |
-| `KMLib_Passives`                | `KMLib_Passives.kicad_sym`                |
-| `KMLib_Power`                   | `KMLib_Power.kicad_sym`                   |
-| `KMLib_Sensors`                 | `KMLib_Sensors.kicad_sym`                 |
-| `KMLib_Switches`                | `KMLib_Switches.kicad_sym`                |
+### 2. Library tables
 
-## Register footprint libraries
+The repository **commits its library tables**. Do not register 36 libraries by hand.
 
-1. `Preferences -> Manage Footprint Libraries...`
-2. `Global Libraries` tab.
-3. Add each categorized library with `${KMLIB_LOCAL}/footprints/` as the base path:
+| File | Registers |
+| --- | --- |
+| `kmlib.fp-lib-table` | 51 footprint libraries |
+| `kmlib.sym-lib-table` | 46 symbol libraries |
+| `kmlib.design-block-lib-table` | 10 design-block libraries |
 
-| Nickname                 | Folder                          |
-| ------------------------ | ------------------------------- |
-| `KMLib_Aesthetic`        | `KMLib_Aesthetic.pretty`        |
-| `KMLib_Boards_Modules`   | `KMLib_Boards_Modules.pretty`   |
-| `KMLib_Connectors`       | `KMLib_Connectors.pretty`       |
-| `KMLib_IC_SMD`           | `KMLib_IC_SMD.pretty`           |
-| `KMLib_IC_THT`           | `KMLib_IC_THT.pretty`           |
-| `KMLib_Mounting`         | `KMLib_Mounting.pretty`         |
-| `KMLib_Passives_SMD`     | `KMLib_Passives_SMD.pretty`     |
-| `KMLib_Passives_THT`     | `KMLib_Passives_THT.pretty`     |
-| `KMLib_Proto`            | `KMLib_Proto.pretty`            |
-| `KMLib_Proto_Decorators` | `KMLib_Proto_Decorators.pretty` |
-| `KMLib_Relays`           | `KMLib_Relays.pretty`           |
-| `KMLib_Switches`         | `KMLib_Switches.pretty`         |
-| `KMLib_TestPoints`       | `KMLib_TestPoints.pretty`       |
+They cover **both** `kmlib-local` and the vendored upstream libraries, and every URI is
+written relative to `${KICAD_MASTER_LIB}` — so a clean clone resolves everything, on any
+machine, with no per-developer configuration.
 
-## Register design block libraries
+Merge them into your KiCad configuration (`~/.config/kicad/10.0/`, or
+`~/.var/app/org.kicad.KiCad/config/kicad/10.0/` for the flatpak):
 
-1. `Preferences -> Manage Design Block Libraries...`
-2. `Global Libraries` tab.
-3. Add each categorized library with `${KMLIB_LOCAL}/blocks/` as the base path:
+- `fp-lib-table` ← `kmlib.fp-lib-table`
+- `sym-lib-table` ← `kmlib.sym-lib-table`
+- `design-block-lib-table` ← `kmlib.design-block-lib-table`
 
-| Nickname                 | Folder                                |
-| ------------------------ | ------------------------------------- |
-| `KMLib_ADC`              | `KMLib_ADC.kicad_blocks`              |
-| `KMLib_Analog`           | `KMLib_Analog.kicad_blocks`           |
-| `KMLib_Digital`          | `KMLib_Digital.kicad_blocks`          |
-| `KMLib_Interface`        | `KMLib_Interface.kicad_blocks`        |
-| `KMLib_Memory`           | `KMLib_Memory.kicad_blocks`           |
-| `KMLib_Microcontroller`  | `KMLib_Microcontroller.kicad_blocks`  |
-| `KMLib_Networks_Active`  | `KMLib_Networks_Active.kicad_blocks`  |
-| `KMLib_Networks_Passive` | `KMLib_Networks_Passive.kicad_blocks` |
-| `KMLib_Power`            | `KMLib_Power.kicad_blocks`            |
-| `KMLib_Sensor`           | `KMLib_Sensor.kicad_blocks`           |
+Keep any existing entries for the stock KiCad libraries; the KMLib tables only add to them.
 
-## Optional: register vendor libraries
+**This matters more than convenience.** Library resolution that lives only in one
+developer's KiCad configuration cannot be reproduced from a clean checkout — so a board
+cannot be rebuilt, and CI cannot verify it. The committed tables are the source of truth.
 
-Add only what you need to keep tables manageable. Typical locations:
+After adding or removing a library, regenerate them:
 
-- Arduino: `arduino-kicad-library/symbols/arduino-library.kicad_sym` and `arduino-kicad-library/footprints/arduino-library.pretty`
-- Digi-Key: `digikey-kicad-library/digikey-symbols` and `digikey-kicad-library/digikey-footprints.pretty`
-- SparkFun: `SparkFun-KiCad-Libraries/Symbols` and `SparkFun-KiCad-Libraries/Footprints`
-- Seeed OPL: subfolders under `OPL_Kicad_Library/` (for example `Seeed Studio XIAO Series Library`)
+```sh
+python3 scripts/gen_lib_tables.py
+```
 
-Refer to each vendor's README for any special steps.
+## Verify
 
-## Verify the installation
+1. **Symbol Editor** — select any `KMLib_*` library and browse.
+2. **Footprint Editor** — likewise.
+3. **Schematic Editor** — `Place → Add Design Block`, and browse the `KMLib_*` blocks.
+4. **3D Viewer** — place a KMLib footprint on a scratch board and confirm the model
+   appears. If it doesn't, `KMLIB_LOCAL` is wrong (see the forward-slash note above).
 
-1. Open the **Symbol Editor**, select any KMLib\_\* library, and browse symbols.
-2. Open the **Footprint Editor**, select any KMLib\_\* library, and browse footprints.
-3. In the **Schematic Editor**, use **Place -> Add Design Block** to browse available design blocks from the KMLib\_\* block libraries.
-4. Place a footprint on a scratch PCB and open the **3D Viewer** to confirm `${KMLIB_LOCAL}/3dmodels` resolves and models appear correctly.
+## Vendored upstream libraries
 
-## Keeping your checkout current
+Upstream libraries live under `vendor/` as plain files, so they can be patched locally,
+cloned without `--recursive`, and used offline.
 
-Update the main repo and submodules periodically:
+[`vendor.yaml`](../vendor.yaml) is the manifest: upstream URL, tracked ref, **pinned
+commit**, and licence for each. The pin moves forward deliberately, by a human, after
+review — never automatically.
+
+| Library | Licence |
+| --- | --- |
+| SparkFun-KiCad-Libraries | CC-BY-4.0 |
+| OPL_Kicad_Library (Seeed) | CC-BY-SA-4.0 |
+| digikey-kicad-library | CC-BY-SA-4.0, with an exception — see its `LICENSE.md` |
+| arduino-kicad-library | CC-BY-SA-4.0 |
+
+They are already registered in the committed tables — nothing extra to configure.
+
+### Keeping current
 
 ```sh
 git pull origin main
-git submodule update --init --recursive
 ```
 
-When you need a newer upstream vendor release, run `git submodule update --remote <path>` for the relevant submodule and commit the change. Pinning submodule SHAs keeps the workspace reproducible. (This is standard Git behavior for submodules.)
+That's it. No `git submodule update`.
+
+Upstream tracking is a separate, deliberate act. A daily
+[`upstream-drift`](../.github/workflows/upstream-drift.yml) workflow asks each upstream
+whether it has moved past our pin and opens **one tracking issue per drifted library**.
+Nothing syncs automatically.
+
+Check drift yourself:
+
+```sh
+python3 scripts/check_drift.py
+```
+
+Integrate a drifted library:
+
+```sh
+python3 scripts/vendor_sync.py <name> --check   # preview the upstream commits
+python3 scripts/vendor_sync.py <name>           # three-way merge, then review and commit
+```
+
+**Local modifications survive.** `vendor_sync.py` replays your copy onto the commit we
+last vendored, then lets git three-way merge the new upstream on top. Conflicts are
+reported and the pin is left unadvanced until you resolve them. Prefer upstreaming a fix
+over carrying it here.
+
+> **Before syncing, know what depends on it.** A vendor sync can change a footprint under
+> a board that has already been fabricated. Check that the parts your boards actually
+> *use* have not changed **pad geometry** — not merely that they still resolve.
+
+## Cloning without 3D models
+
+A full checkout is ~335 MB, ~260 MB of which is 3D models. ERC, DRC, netlist generation
+and schematic generation never open one — only 3D renders and STEP export do.
+
+Excluding them gives a **~73 MB** checkout with every library still present:
+
+```sh
+git clone --filter=blob:none --sparse https://github.com/feastorg/KiCad-Master-Lib.git
+cd KiCad-Master-Lib
+git sparse-checkout set --no-cone '/*' \
+    '!*.step' '!*.STEP' '!*.stp' '!*.STP' '!*.wrl' '!*.WRL'
+```
+
+Exclude by **extension, not directory** — some upstreams keep 3D models loose in product
+folders rather than under `*.3dshapes/`.
+
+This is what CI uses.

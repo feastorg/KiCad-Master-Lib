@@ -1,8 +1,15 @@
 # TODO
 
-- [ ] Evaluate scripting options to generate KiCad library tables automatically instead of the current manual registration steps.
+- [x] ~~Evaluate scripting options to generate KiCad library tables automatically instead of
+  the current manual registration steps.~~ Done: `scripts/gen_lib_tables.py` generates
+  `kmlib.{fp,sym,design-block}-lib-table` from what is on disk, and they are committed. A
+  clean clone resolves every library with no manual registration.
 
-- [ ] Eventually pair off kmlib-local to its own repo (e.g. feast-kicad-library) and submodule it into repo same as others
+- [ ] Eventually split `kmlib-local` into its own repo (e.g. `feast-kicad-library`).
+  **Note:** do *not* bring it back as a submodule. Submodules were removed in favour of
+  vendoring precisely because they cannot be patched locally, need `--recursive`, and
+  break checkouts (`submodules: true` fails outright on a stray gitlink). If it is split
+  out, vendor it like the others and track it in `vendor.yaml`.
 
 - [ ] Database integration / the relationship to kicad databases
 

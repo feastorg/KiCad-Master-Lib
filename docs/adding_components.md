@@ -1,6 +1,39 @@
 # Adding New Components
 
-This guide documents the workflow for adding or modifying parts in `kmlib-local`. Use KiCad **9.x stable**.
+This guide documents the workflow for adding or modifying parts in `kmlib-local`. Use KiCad **10.x stable**.
+
+## Naming rules
+
+These are not style preferences. Each one exists because breaking it caused a real failure.
+
+**No spaces in library, symbol, or footprint names.** Names appear verbatim in `lib_id`
+strings, shell commands, CLI arguments and scripts. A footprint called `Thermal Pad` has to
+be quoted everywhere forever, and is a standing invitation to a bug. Use `Thermal_Pad`.
+
+**Prefer the manufacturer part number**, e.g. `AP63205WU-7_Buck_Regulator`,
+`031-5431-1010_BNC_Coaxial_Right_Angle`. It is what makes a part identifiable later — when
+you are staring at a board that references a library that no longer exists, an MPN is the
+only thing that tells you what the part actually was.
+
+**Never file a first-party part under a vendor library's nickname.** Putting a FEAST part
+in `SparkFun-Connector` does not make it a SparkFun part; it makes it a part that vanishes
+the moment anyone re-syncs that vendor library. The BREAD slice-bus connector — the
+physical embodiment of the BREADS standard — was lost this way, and survived only as
+geometry embedded in one board file.
+
+**Renaming a symbol means renaming its sub-units.** A symbol's sub-units carry the bare
+item name:
+
+```
+(symbol "KMLib_IC_Power:AP63205WU-7_Buck_Regulator"
+    (symbol "AP63205WU-7_Buck_Regulator_0_1" ...)
+```
+
+Rename the symbol and leave the sub-units behind, and **KiCad refuses to open any
+schematic using it** (`Invalid symbol unit name prefix`). The KiCad symbol editor handles
+this for you; hand-editing or scripting a rename does not. Worse, `kicad-cli` prints
+"Failed to load schematic" and still **exits 0**, so an unloadable schematic scores as
+"zero ERC violations" to any script that trusts the exit code.
 
 ## Before you start
 
@@ -54,7 +87,7 @@ The `kmlib-local/` folder contains FEAST's custom KiCad libraries. Components ar
 
 ### Design Blocks
 
-Design blocks are stored under `kmlib-local/blocks/` and use KiCad 9’s native **Design Block** format for reusable schematic fragments.
+Design blocks are stored under `kmlib-local/blocks/` and use KiCad's native **Design Block** format for reusable schematic fragments.
 
 At the top level, design blocks are organized into category directories with the suffix `.kicad_blocks`.  
 Each category directory is prefixed with `KMLib_` and represents a logical grouping of reusable circuit designs (for example: ADCs, Power, Interfaces, Microcontrollers).
@@ -183,4 +216,16 @@ git add kmlib-local/footprints/KMLib_<Category>.pretty/<new-footprint>.kicad_mod
 git add kmlib-local/3dmodels/<Category>.3dshapes/<model-file>
 ```
 
-Commit with a clear message referencing the part number. If you updated a vendor submodule, commit that change separately so upstream updates stay traceable.
+Commit with a clear message referencing the part number.
+
+**If you added or removed a library**, regenerate the committed library tables so a clean
+checkout still resolves everything:
+
+```sh
+python3 scripts/gen_lib_tables.py
+```
+
+**Do not hand-edit anything under `vendor/`** to pick up an upstream change. Use
+`scripts/vendor_sync.py`, which performs a three-way merge and moves the pin in
+`vendor.yaml`, so the update stays traceable. A local fix to a vendored part is allowed and
+will survive a sync — but prefer upstreaming it.

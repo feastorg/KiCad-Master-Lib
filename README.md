@@ -90,10 +90,10 @@ unadvanced until you resolve it. Prefer upstreaming a fix over carrying it here.
 
 ## Cloning without 3D models (CI, or slow links)
 
-A full checkout is ~269 MB, of which ~206 MB is 3D models. ERC, DRC, netlist generation
+A full checkout is ~335 MB, of which ~260 MB is 3D models. ERC, DRC, netlist generation
 and schematic generation never read a 3D model — only 3D renders and STEP export do.
 
-Excluding them drops the checkout to **~68 MB**, with all 51 footprint and 46 symbol
+Excluding them drops the checkout to **~73 MB**, with all 51 footprint and 46 symbol
 libraries still present:
 
 ```sh
