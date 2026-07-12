@@ -1,8 +1,7 @@
 # TODO
 
-- [ ] Evaluate scripting options to generate KiCad library tables automatically instead of the current manual registration steps.
-
-- [ ] Eventually pair off kmlib-local to its own repo (e.g. feast-kicad-library) and submodule it into repo same as others
+- [ ] Eventually split `kmlib-local` into its own repo (e.g. `feast-kicad-library`) and
+  vendor it like the others, tracked in `vendor.yaml`.
 
 - [ ] Database integration / the relationship to kicad databases
 

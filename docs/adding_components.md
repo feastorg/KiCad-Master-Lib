@@ -1,12 +1,17 @@
 # Adding New Components
 
-This guide documents the workflow for adding or modifying parts in `kmlib-local`. Use KiCad **9.x stable**.
+This guide documents the workflow for adding or modifying parts in `kmlib-local`. Use KiCad **10.x stable**.
 
-## Before you start
+## Naming rules
 
-- Collect the component datasheet, recommended footprint, and mechanical model.
-- Use a unique, descriptive name. Prefer the manufacturer part number (for example `031-5431-1010`).
-- Check for similar parts to avoid duplicates.
+- **No spaces** in library, symbol or footprint names. Names appear verbatim in `lib_id`
+  strings and on command lines. Use `Thermal_Pad`, not `Thermal Pad`.
+- **Prefer the manufacturer part number**, e.g. `AP63205WU-7_Buck_Regulator`.
+- **Do not put FEAST parts in a vendor library.** `vendor/` is reserved for upstream
+  content, and is overwritten on sync. First-party parts belong in `kmlib-local`.
+- **Renaming a symbol also renames its sub-units.** A symbol's sub-units carry the bare
+  item name (`ITEM_0_1` inside `LIB:ITEM`); if they disagree, KiCad refuses to open any
+  schematic using the symbol. The Symbol Editor handles this; hand-editing does not.
 
 ## kmlib-local organization
 
@@ -54,7 +59,7 @@ The `kmlib-local/` folder contains FEAST's custom KiCad libraries. Components ar
 
 ### Design Blocks
 
-Design blocks are stored under `kmlib-local/blocks/` and use KiCad 9’s native **Design Block** format for reusable schematic fragments.
+Design blocks are stored under `kmlib-local/blocks/` and use KiCad's native **Design Block** format for reusable schematic fragments.
 
 At the top level, design blocks are organized into category directories with the suffix `.kicad_blocks`.  
 Each category directory is prefixed with `KMLib_` and represents a logical grouping of reusable circuit designs (for example: ADCs, Power, Interfaces, Microcontrollers).
@@ -183,4 +188,16 @@ git add kmlib-local/footprints/KMLib_<Category>.pretty/<new-footprint>.kicad_mod
 git add kmlib-local/3dmodels/<Category>.3dshapes/<model-file>
 ```
 
-Commit with a clear message referencing the part number. If you updated a vendor submodule, commit that change separately so upstream updates stay traceable.
+Commit with a clear message referencing the part number.
+
+**If you added or removed a library**, regenerate the committed library tables so a clean
+checkout still resolves everything:
+
+```sh
+python3 scripts/gen_lib_tables.py
+```
+
+**Do not hand-edit anything under `vendor/`** to pick up an upstream change. Use
+`scripts/vendor_sync.py`, which performs a three-way merge and moves the pin in
+`vendor.yaml`, so the update stays traceable. A local fix to a vendored part is allowed and
+will survive a sync — but prefer upstreaming it.

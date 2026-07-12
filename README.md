@@ -14,8 +14,6 @@ Hopefully this prevents me from going completely insane. - CKB
 git clone https://github.com/feastorg/KiCad-Master-Lib.git
 ```
 
-No `--recurse-submodules` — upstream libraries are vendored (see below).
-
 Then set `KICAD_MASTER_LIB` to wherever you cloned it, and add the committed tables to
 your KiCad configuration:
 
@@ -50,8 +48,7 @@ scripts/         library table generation, vendoring, drift detection
 
 ## Vendored upstream libraries
 
-Upstream libraries live under `vendor/` as plain files rather than git submodules, so
-they can be patched locally, cloned without `--recursive`, and used offline.
+Upstream libraries live under `vendor/`, pinned in [`vendor.yaml`](vendor.yaml).
 
 [`vendor.yaml`](vendor.yaml) is the manifest: upstream URL, tracked ref, **pinned
 commit**, and licence for each. The pin moves forward deliberately, by a human, after
@@ -90,10 +87,10 @@ unadvanced until you resolve it. Prefer upstreaming a fix over carrying it here.
 
 ## Cloning without 3D models (CI, or slow links)
 
-A full checkout is ~269 MB, of which ~206 MB is 3D models. ERC, DRC, netlist generation
+A full checkout is ~356 MB, of which ~283 MB is 3D models. ERC, DRC, netlist generation
 and schematic generation never read a 3D model — only 3D renders and STEP export do.
 
-Excluding them drops the checkout to **~68 MB**, with all 51 footprint and 46 symbol
+Excluding them drops the checkout to **~73 MB**, with all 51 footprint and 46 symbol
 libraries still present:
 
 ```sh

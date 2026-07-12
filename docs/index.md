@@ -1,35 +1,44 @@
 # KiCad Master Library
 
-KiCad Master Library (KMLib) collects FEAST-specific custom KiCad assets alongside curated upstream vendor libraries. Each third-party library is tracked as a Git submodule so the project can pin known-good revisions while keeping updates straightforward.
+KiCad Master Library (KMLib) collects FEAST-specific KiCad assets alongside curated upstream
+vendor libraries, so every FEAST design resolves its parts from one place.
 
 ## Repository layout
 
-- `kmlib-local/`: FEAST maintained symbol, footprint, 3D model, and design block library organized into categorized KMLib\_\* libraries.
-- `arduino-kicad-library/`: upstream Arduino module symbols and footprints.
-- `digikey-kicad-library/`: Digi-Key reference symbols and footprints.
-- `SparkFun-KiCad-Libraries/`: SparkFun maintained symbols, footprints, and 3D models.
-- `OPL_Kicad_Library/`: Seeed Studio Open Parts Library (OPL) content.
-
-Use the guides below for hands-on setup and contribution workflows.
-
-## Supported KiCad versions
-
-Use KiCad **9.x stable** for editing and day-to-day use. These libraries are authored and tested with KiCad 9.0-series builds. Prior major versions are not supported because of format and feature changes across major releases. Refer to the official KiCad 9.0 release notes for detailed compatibility guidance.
-
-## File format notes
-
-KMLib uses the KiCad 9.x symbol and footprint formats. Avoid depending on the numeric `version` headers inside the library files; KiCad guarantees compatibility within a major series, but a future major release may require migration. Review the 9.0 library format documentation before upgrading the toolchain.
-
-## Keeping the libraries current
-
-```sh
-git pull origin main
-git submodule update --init --recursive
+```
+kmlib-local/     FEAST symbols, footprints, 3D models and design blocks (KMLib_* libraries)
+vendor/          upstream libraries, pinned in vendor.yaml
+scripts/         library-table generation, vendoring, drift detection
 ```
 
-Run those commands from the repository root whenever you need the latest upstream changes. Update individual submodules with the usual `git submodule update --remote <path>` workflow when you want to track newer vendor releases.
+## Library tables
+
+| File | Registers |
+| --- | --- |
+| `kmlib.fp-lib-table` | 51 footprint libraries |
+| `kmlib.sym-lib-table` | 46 symbol libraries |
+| `kmlib.design-block-lib-table` | 10 design-block libraries |
+
+Every URI is relative to `${KICAD_MASTER_LIB}` and covers both `kmlib-local` and the
+vendored upstreams, so a clean clone resolves everything with no per-machine setup.
+
+Regenerate with `python3 scripts/gen_lib_tables.py`.
+
+## Supported KiCad version
+
+KiCad 10.x stable.
+
+## Upstream libraries
+
+Vendored under `vendor/` and pinned in [`vendor.yaml`](../vendor.yaml). A daily
+[`upstream-drift`](../.github/workflows/upstream-drift.yml) workflow opens a tracking issue
+when an upstream moves past its pin; a human reviews it and advances the pin with
+`scripts/vendor_sync.py`.
+
+Nothing syncs automatically. A footprint that changes under an already-fabricated board is
+a manufacturing problem, so the pin is deliberate.
 
 ## Next steps
 
-- [Getting Started](getting_started) walks through installing the libraries and configuring KiCad.
-- [Adding New Components](adding_components) covers the workflow for contributing new parts to `kmlib-local`.
+- [Getting Started](getting_started) — install and configure.
+- [Adding New Components](adding_components) — contribute parts to `kmlib-local`.
