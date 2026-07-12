@@ -1,0 +1,13 @@
+(design_block_lib_table
+	(version 7)
+	(lib (name "KMLib_ADC")(type "KiCad")(uri "${KICAD_MASTER_LIB}/kmlib-local/blocks/KMLib_ADC.kicad_blocks")(options "")(descr "first-party"))
+	(lib (name "KMLib_Analog")(type "KiCad")(uri "${KICAD_MASTER_LIB}/kmlib-local/blocks/KMLib_Analog.kicad_blocks")(options "")(descr "first-party"))
+	(lib (name "KMLib_Digital")(type "KiCad")(uri "${KICAD_MASTER_LIB}/kmlib-local/blocks/KMLib_Digital.kicad_blocks")(options "")(descr "first-party"))
+	(lib (name "KMLib_Interface")(type "KiCad")(uri "${KICAD_MASTER_LIB}/kmlib-local/blocks/KMLib_Interface.kicad_blocks")(options "")(descr "first-party"))
+	(lib (name "KMLib_Memory")(type "KiCad")(uri "${KICAD_MASTER_LIB}/kmlib-local/blocks/KMLib_Memory.kicad_blocks")(options "")(descr "first-party"))
+	(lib (name "KMLib_Microcontroller")(type "KiCad")(uri "${KICAD_MASTER_LIB}/kmlib-local/blocks/KMLib_Microcontroller.kicad_blocks")(options "")(descr "first-party"))
+	(lib (name "KMLib_Networks_Active")(type "KiCad")(uri "${KICAD_MASTER_LIB}/kmlib-local/blocks/KMLib_Networks_Active.kicad_blocks")(options "")(descr "first-party"))
+	(lib (name "KMLib_Networks_Passive")(type "KiCad")(uri "${KICAD_MASTER_LIB}/kmlib-local/blocks/KMLib_Networks_Passive.kicad_blocks")(options "")(descr "first-party"))
+	(lib (name "KMLib_Power")(type "KiCad")(uri "${KICAD_MASTER_LIB}/kmlib-local/blocks/KMLib_Power.kicad_blocks")(options "")(descr "first-party"))
+	(lib (name "KMLib_Sensor")(type "KiCad")(uri "${KICAD_MASTER_LIB}/kmlib-local/blocks/KMLib_Sensor.kicad_blocks")(options "")(descr "first-party"))
+)
