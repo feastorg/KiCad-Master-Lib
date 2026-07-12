@@ -1,4 +1,4 @@
-(footprint "5001 Test Point Miniature Keystone"
+(footprint "Keystone_5001_TestPoint_Miniature"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
