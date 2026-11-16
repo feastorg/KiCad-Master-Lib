@@ -55,6 +55,9 @@ grouped by dated development era rather than by version.
   footprint name).
 - `KMLib_Aesthetic/BREAD_logo_v1.kicad_mod` declared itself `LOGO`; KiCad keys
   footprints by the name inside the file.
+- `ADUM5010ARSZ-RL7_Isolated_DC-DC`: the GNDP and GNDISO pins were `power_out`, so tying
+  a side's grounds together raised `pin_to_pin` ERC errors, and VISO was `unspecified`,
+  so nothing drove the isolated supply. Grounds are now `power_in` and VISO `power_out`.
 
 ### Removed
 
