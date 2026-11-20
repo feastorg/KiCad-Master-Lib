@@ -19,6 +19,10 @@ grouped by dated development era rather than by version.
 - `G3VM-61VY4` (Omron MOS FET relay, 60 V, 700 mA AC peak/DC, 0.3 Ω max, 1 mA trigger) in
   `KMLib_Electromechanical`, with a `KMLib_Relays` footprint on Omron's recommended pads
   (K347-E1). It replaces the CPC1002N, which Littelfuse marks Not For New Designs.
+- `TPS26630PWP_eFuse` (TI TPS26630, 60 V, 6 A industrial eFuse: adjustable OVP cutoff and
+  UVLO, active current limit, reverse polarity with an external N-FET) in `KMLib_IC_Power`.
+  Pins follow TI SLVSE94G Table 5-1; the footprint is KiCad's stock HTSSOP-20 PowerPAD
+  matching TI's PWP0020T land pattern (3.4 x 6.5 mm pad, 2.96 x 2.96 mm mask opening).
 - `scripts/lint_lib.py` — static checks over `kmlib-local/`: dead 3D-model paths,
   symbol Footprints with no library prefix or naming a footprint that does not exist,
   footprint name differing from file name (errors); `unspecified` pins, non-URL
