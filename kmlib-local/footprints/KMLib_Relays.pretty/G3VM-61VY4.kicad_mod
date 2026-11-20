@@ -1,0 +1,191 @@
+(footprint "G3VM-61VY4"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Omron G3VM-61VY4 special SOP 4-pin, body 4.55x3.7 mm, 2.54 mm pitch, lead span 7.0 mm; pads per Omron K347-E1 recommended mounting pad dimensions")
+	(tags "SOP-4 photo MOSFET relay Omron G3VM")
+	(property "Reference" "REF**"
+		(at 0 -3.1 0)
+		(layer "F.SilkS")
+		(uuid "424b7ba4-10c6-45ea-a118-7df40b866618")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "G3VM-61VY4"
+		(at 0 3.1 0)
+		(layer "F.Fab")
+		(uuid "da2da437-b5ca-4eaa-bcd5-f06ec8da6a64")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.aratas.com/us-en/system/files/datasheet_pdf/K347-E1.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "50b1d38f-0d01-4912-9849-aa1bd983c460")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Omron G3VM-61VY4 MOS FET relay, 60 V, 700 mA, special SOP 4-pin"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "138484e7-d7a9-4ce4-a738-463f2db25338")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.2 -1.97)
+		(end 1.2 -1.97)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c9a74d01-c8f0-4506-8641-7ea3f4c33559")
+	)
+	(fp_line
+		(start -1.2 1.97)
+		(end 1.2 1.97)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "baf7a5d2-17a9-40b0-a6ff-9742b18c636f")
+	)
+	(fp_circle
+		(center -3.6 -2.3)
+		(end -3.45 -2.3)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "33e14d77-19bd-48c7-a036-d23b515dc07a")
+	)
+	(fp_line
+		(start -2.275 -1.85)
+		(end 2.275 -1.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "db2e42cf-c4e1-40cd-b48b-8587e7980cb8")
+	)
+	(fp_line
+		(start 2.275 -1.85)
+		(end 2.275 1.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8c00e618-de08-4b4e-a113-0cc3f84eac33")
+	)
+	(fp_line
+		(start 2.275 1.85)
+		(end -2.275 1.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "284e1440-5b88-4307-848a-fbd9a9d54fb6")
+	)
+	(fp_line
+		(start -2.275 1.85)
+		(end -2.275 -1.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a346a9cd-db75-4214-b328-482a5d80d416")
+	)
+	(fp_line
+		(start -3.75 -2.1)
+		(end 3.75 -2.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0206c2b1-6c6c-4b6f-afbc-fbc235caea23")
+	)
+	(fp_line
+		(start 3.75 -2.1)
+		(end 3.75 2.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "872173c8-5e2e-406f-81be-e78c9488ff5b")
+	)
+	(fp_line
+		(start 3.75 2.1)
+		(end -3.75 2.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b8c306c8-1ef9-403d-8ff4-5a4b3b3195ac")
+	)
+	(fp_line
+		(start -3.75 2.1)
+		(end -3.75 -2.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a48ecd9f-ae9b-41f7-ab88-fab032921c2a")
+	)
+	(pad "1" smd rect
+		(at -2.475 -1.27)
+		(size 1.2 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "80593de8-2918-4471-9956-169331416401")
+	)
+	(pad "2" smd rect
+		(at -2.475 1.27)
+		(size 1.2 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6553a06d-1cc4-4658-9411-e85ee1d8251d")
+	)
+	(pad "3" smd rect
+		(at 2.475 1.27)
+		(size 1.2 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "56bbac5b-b64a-4744-be3c-a6554e6b9b68")
+	)
+	(pad "4" smd rect
+		(at 2.475 -1.27)
+		(size 1.2 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "585193bf-9477-4aa5-83c2-1d08b452278f")
+	)
+	(embedded_fonts no)
+)

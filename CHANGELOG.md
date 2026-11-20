@@ -13,6 +13,12 @@ grouped by dated development era rather than by version.
 
 ### Added
 
+- `1985218` (Phoenix Contact PTSA 1,5/ 4-3,5-Z, 4-position push-in terminal block, 3.5 mm
+  pitch, zig-zag pins) in `KMLib_Connectors`, with its footprint. Pin positions follow the
+  Phoenix drill plan; no 3D model yet.
+- `G3VM-61VY4` (Omron MOS FET relay, 60 V, 700 mA AC peak/DC, 0.3 Ω max, 1 mA trigger) in
+  `KMLib_Electromechanical`, with a `KMLib_Relays` footprint on Omron's recommended pads
+  (K347-E1). It replaces the CPC1002N, which Littelfuse marks Not For New Designs.
 - `scripts/lint_lib.py` — static checks over `kmlib-local/`: dead 3D-model paths,
   symbol Footprints with no library prefix or naming a footprint that does not exist,
   footprint name differing from file name (errors); `unspecified` pins, non-URL
