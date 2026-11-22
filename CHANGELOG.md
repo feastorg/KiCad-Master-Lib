@@ -13,6 +13,11 @@ grouped by dated development era rather than by version.
 
 ### Added
 
+- `PCIE-036-02-X-D-TH` (Samtec PCI Express x1 edge-card socket, 36 positions, 1.00 mm
+  pitch, vertical, through-hole) in `KMLib_Connectors`, with its footprint
+  `SAMTEC_PCIE-036-02-X-D-TH`. Slice_STPC referenced both but neither was in the library.
+  Holes, rows and the two Ø2.35 mm peg holes follow Samtec's recommended PCB layout,
+  Rev F; no 3D model yet.
 - `1985218` (Phoenix Contact PTSA 1,5/ 4-3,5-Z, 4-position push-in terminal block, 3.5 mm
   pitch, zig-zag pins) in `KMLib_Connectors`, with its footprint. Pin positions follow the
   Phoenix drill plan; no 3D model yet.
