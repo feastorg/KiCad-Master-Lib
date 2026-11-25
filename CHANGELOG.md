@@ -61,8 +61,8 @@ grouped by dated development era rather than by version.
 
 - `Atlas_OEM` in `KMLib_Boards_Modules`: P6, P7, P8 and P11 sat 0.01-0.1 mm off the
   module's 0 / 12 mm pad columns (P6 at x -0.01, P7/P8 at 12.1, P11 at 11.9). They are on
-  the grid now. The 12 pads fit both Atlas OEM families: 10-pin pH/EC/ORP/DO modules on
-  P1-P5 and P8-P12, the 12-pin RTD module on all twelve.
+  the grid now. 10-pin pH/EC/ORP modules sit on P1-P5 and P8-P12. The 12-pin RTD OEM does
+  not fit: its pad columns are 11 mm apart, not 12.
 - `Atlas_OEM` in `KMLib_Boards_Modules`: the module outline on F.SilkS ran through the
   centre of all 12 castellated pads. The outline is now on F.Fab, and a silk rectangle
   sits outside the pads (0.147 mm or more from every pad). On Slice_AOEM's four modules
