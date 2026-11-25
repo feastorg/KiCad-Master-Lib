@@ -59,6 +59,9 @@ grouped by dated development era rather than by version.
 
 ### Fixed
 
+- `5025700893` (Molex 502570-0893 microSD) in `KMLib_Connectors` now carries the three
+  pattern-prohibition areas from Molex drawing SD-502570-001 rev A, sheet 2, as F.Cu
+  keepouts (no tracks, vias or pour). Pads are unchanged; they already match that drawing.
 - `SOIC_05WU-7_DIO`: the pin-1 `*` was drawn twice on F.SilkS and twice on F.Fab, as
   identical texts at the same position. One of each remains.
 - 21 generated footprints drew the pin-1 `*` twice on F.SilkS and twice on F.Fab, as

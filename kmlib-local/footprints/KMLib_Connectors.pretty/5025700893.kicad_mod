@@ -331,6 +331,99 @@
 		(uuid "45dbb25d-fc38-4b9a-8018-369acff48cfc")
 	)
 	(embedded_fonts no)
+	(zone
+		(layer "F.Cu")
+		(uuid "f095842c-0f38-47ca-a371-89d134466f4b")
+		(name "Molex pattern prohibition")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 6.138 0.75) (xy 6.638 0.75) (xy 6.638 1.75) (xy 6.138 1.75)
+			)
+		)
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "ea1267f2-8766-4e36-8a32-80c1050324b2")
+		(name "Molex pattern prohibition")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 3.938 5.25) (xy 6.838 5.25) (xy 6.838 6.65) (xy 3.938 6.65)
+			)
+		)
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "ab21fea0-d098-4a89-80bb-d72f4792f2fb")
+		(name "Molex pattern prohibition")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 0.288 7.05) (xy 1.288 7.05) (xy 1.288 7.55) (xy 0.288 7.55)
+			)
+		)
+	)
 	(model "${KMLIB_LOCAL}/3dmodels/Connectors.3dshapes/502570-0893.stp"
 		(offset
 			(xyz -44.17999964 -62.09999754 0.8999999626)
