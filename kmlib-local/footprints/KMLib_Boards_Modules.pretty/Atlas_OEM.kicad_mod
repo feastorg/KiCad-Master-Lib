@@ -255,6 +255,17 @@
 		(uuid "619e2507-1a1e-4cde-b054-f478a2eed63a")
 	)
 	(fp_rect
+		(start -1.35 -11.1)
+		(end 13.45 2.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "cd52ff19-3c6d-44fb-9b98-9623c9405739")
+	)
+	(fp_rect
 		(start 0 -11)
 		(end 12 2.31)
 		(stroke
@@ -262,7 +273,7 @@
 			(type default)
 		)
 		(fill no)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "caf9513b-1e20-4ab1-8bf1-46ec4d1a5f4d")
 	)
 	(fp_poly

@@ -59,6 +59,10 @@ grouped by dated development era rather than by version.
 
 ### Fixed
 
+- `Atlas_OEM` in `KMLib_Boards_Modules`: the module outline on F.SilkS ran through the
+  centre of all 12 castellated pads. The outline is now on F.Fab, and a silk rectangle sits
+  outside the pads (0.15 mm or more from every pad). On Slice_AOEM's four modules this
+  clears all 48 silk_over_copper warnings and changes no other DRC count.
 - `Thermal_Pad` in `KMLib_Mounting` no longer has F.Paste. It is the BREAD slices'
   unsoldered heat-spreading pad opposite the buck regulator, with open GND vias in it; a
   stencil would have printed paste over the whole 12 x 12 mm pad, and paste over open vias
