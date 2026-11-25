@@ -59,6 +59,8 @@ grouped by dated development era rather than by version.
 
 ### Fixed
 
+- `SOIC_05WU-7_DIO`: the pin-1 `*` was drawn twice on F.SilkS and twice on F.Fab, as
+  identical texts at the same position. One of each remains.
 - `1217861-1_Tab`: both pins were `unspecified`, so every connection to the tab raised a
   `pin_to_pin` ERC warning. Now `passive`.
 - 17 footprint `(model ...)` paths that resolved nowhere — KiCad 5 library names
