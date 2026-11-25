@@ -59,6 +59,10 @@ grouped by dated development era rather than by version.
 
 ### Fixed
 
+- `Thermal_Pad` in `KMLib_Mounting` no longer has F.Paste. It is the BREAD slices'
+  unsoldered heat-spreading pad under the buck regulator, and its GND vias are left open;
+  a stencil would have printed paste over the whole 12 x 12 mm pad, and paste over open vias wicks
+  away in reflow.
 - `5025700893` (Molex 502570-0893 microSD) in `KMLib_Connectors` now carries the three
   pattern-prohibition areas from Molex drawing SD-502570-001 rev A, sheet 2, as F.Cu
   keepouts (no tracks, vias or pour). Pads are unchanged; they already match that drawing.
