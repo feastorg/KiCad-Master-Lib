@@ -59,6 +59,10 @@ grouped by dated development era rather than by version.
 
 ### Fixed
 
+- 21 generated footprints in `KMLib_IC_SMD` (CD4060, CP_16_19_ADI, DGN8_1P89X1P57,
+  DIODE_SOD-523_DIO, RS_20_ADI, SOT-6_SC_LIT and their `-L`/`-M` variants,
+  `SOIC_05WU-7_DIO-L`/`-M`, `SW_Slide-CK-1101M2S3CQE2`) drew the pin-1 `*` twice on
+  F.SilkS and twice on F.Fab, as identical texts at the same position. One of each remains.
 - `1217861-1_Tab`: both pins were `unspecified`, so every connection to the tab raised a
   `pin_to_pin` ERC warning. Now `passive`.
 - 17 footprint `(model ...)` paths that resolved nowhere — KiCad 5 library names

@@ -909,17 +909,6 @@
 		)
 	)
 	(fp_text user "*"
-		(at -3.07975 -6.1468 0)
-		(layer "F.SilkS")
-		(uuid "a10b44c5-d91a-4dbc-b806-227196291407")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(fp_text user "*"
 		(at -1.6129 -4.9276 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -936,17 +925,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "6bbf8720-4070-4b95-b4e8-edea6212bf0c")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(fp_text user "*"
-		(at -1.6129 -4.9276 0)
-		(layer "F.Fab")
-		(uuid "7cfaf937-ccab-4624-9959-6c12dd4ddbb2")
 		(effects
 			(font
 				(size 1 1)
