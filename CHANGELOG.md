@@ -59,6 +59,8 @@ grouped by dated development era rather than by version.
 
 ### Fixed
 
+- `SOIC_05WU-7_DIO`: the pin-1 `*` was drawn twice on F.SilkS and twice on F.Fab, as
+  identical texts at the same position. One of each remains.
 - 21 generated footprints drew the pin-1 `*` twice on F.SilkS and twice on F.Fab, as
   identical texts at the same position. One of each remains. In `KMLib_IC_SMD`: CD4060BM,
   CD4060-L/-M, CP_16_19_ADI, DGN8_1P89X1P57, DIODE_SOD-523_DIO, RS_20_ADI and
