@@ -3,12 +3,12 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "1751066")
-	(tags "Connector")
+	(descr "Phoenix Contact SPT 2,5/ 1-H-5,0 (1751066), push-in PCB terminal block, 1 position, 5 mm pitch, 2 solder pins per potential 8.2 mm apart, drill 1.2 mm; body 6.4 x 14.4 mm, wire entry on the +Y side, 3.67 mm from the pad-1 row; https://www.phoenixcontact.com/us/products/1751066")
+	(tags "Connector terminal block Phoenix SPT 2,5 push-in 5.0mm")
 	(property "Reference" "J**"
-		(at 1.07 -11.18 0)
+		(at 0.9 -12.24 0)
 		(layer "F.SilkS")
-		(uuid "70f3dd33-c87e-4cfb-963d-7a035f6dd2d9")
+		(uuid "aab95e5c-0568-498a-9970-3c2672122312")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17,22 +17,21 @@
 		)
 	)
 	(property "Value" "1751066"
-		(at 0.75 -2.07 0)
-		(layer "F.SilkS")
-		(hide yes)
-		(uuid "02e4bba1-050d-499e-be61-56a4da5e03b0")
+		(at 0.9 5.27 0)
+		(layer "F.Fab")
+		(uuid "f5bee396-ca71-4433-9223-f50469e6627a")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "https://www.phoenixcontact.com/us/products/1751066"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1279e1da-39a2-4fb0-b44e-4c793a0fba86")
+		(uuid "4ade982c-6cb8-4fff-8630-e53d2bda9544")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,11 +39,11 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "Description" "Phoenix Contact SPT 2,5/ 1-H-5,0 push-in PCB terminal block"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2d083fc2-3497-4c0f-b017-8f6125494f73")
+		(uuid "1d169c5d-6424-4010-9f2e-89e129df2b8b")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,118 +52,70 @@
 		)
 	)
 	(attr through_hole)
-	(fp_line
-		(start -0.9 -10.035)
-		(end 3.2 -10.035)
+	(fp_rect
+		(start -2.41 -10.84)
+		(end 4.21 3.78)
 		(stroke
-			(width 0.1)
+			(width 0.12)
 			(type solid)
 		)
+		(fill no)
 		(layer "F.SilkS")
-		(uuid "e063af10-9c47-4606-bee4-13276cfb0186")
-	)
-	(fp_line
-		(start 3.2 -10.035)
-		(end 3.2 4.365)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "8f47eb17-2f1d-4060-a978-35c9a47c19cb")
-	)
-	(fp_line
-		(start 3.2 4.365)
-		(end -0.9 4.365)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "0adb610c-b5ca-43c3-b6bf-2cfbb6eb241e")
+		(uuid "08b4c2f1-cb28-4424-9752-dcb84e0b1c31")
 	)
 	(fp_rect
-		(start -1 -10.14)
-		(end 3.32 4.48)
+		(start -2.8 -11.23)
+		(end 4.6 4.17)
 		(stroke
 			(width 0.05)
-			(type default)
+			(type solid)
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "d4fa2ee9-f525-44c0-9623-d15bcb71c199")
+		(uuid "b6c0888b-e7e9-4d57-9c3c-d841fdafa9e6")
 	)
-	(fp_line
-		(start -0.9 -10.035)
-		(end 3.2 -10.035)
+	(fp_rect
+		(start -2.3 -10.73)
+		(end 4.1 3.67)
 		(stroke
-			(width 0.2)
+			(width 0.1)
 			(type solid)
 		)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "861a9105-d46a-4394-aef5-9ea0ce1fc061")
-	)
-	(fp_line
-		(start -0.9 4.365)
-		(end -0.9 -10.035)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "aa2e4d70-8597-4dbb-8b0e-eef15ccc2156")
-	)
-	(fp_line
-		(start 3.2 -10.035)
-		(end 3.2 4.365)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "ac88ff68-59f9-45c7-8425-a686f6ac3854")
-	)
-	(fp_line
-		(start 3.2 4.365)
-		(end -0.9 4.365)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "b51d6eee-44cc-43be-86f7-cccd8c66ba04")
+		(uuid "3b978cf1-3c14-4094-986e-59b7ee8bbb3e")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 1.64 2.74 0)
+		(at 0.9 -4.1 90)
 		(layer "F.Fab")
-		(uuid "1d76bab4-f985-43e2-8f2f-585d28b73c19")
+		(uuid "277b2b71-5934-4521-8090-e40aa2e8e954")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
 	(pad "1" thru_hole rect
 		(at 0 0)
-		(size 1.8 1.8)
-		(drill 1.1)
+		(size 2.4 2.4)
+		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "567ccfdf-02a1-4c06-b77e-a11b8e6abf57")
+		(uuid "79da66a8-91c6-44fc-9343-6ac4fe4ed5c5")
 	)
 	(pad "2" thru_hole circle
 		(at 0 -8.2)
-		(size 1.8 1.8)
-		(drill 1.1)
+		(size 2.4 2.4)
+		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "c01dab6b-c199-4141-a7af-5e3f13fd6c01")
+		(uuid "bedc76c6-cd12-4df0-a823-3fdb3cc6ab9c")
 	)
 	(embedded_fonts no)
 	(model "${KMLIB_LOCAL}/3dmodels/Connectors.3dshapes/1751066.stp"
 		(offset
-			(xyz -2.249999966 -3.58999986 -0.02999999888)
+			(xyz -2.3 -3.625 0)
 		)
 		(scale
 			(xyz 1 1 1)
