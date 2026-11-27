@@ -61,19 +61,26 @@ grouped by dated development era rather than by version.
   outlines moved to `F.Fab`/`User.2`. Of the symbols and footprints the fleet uses
   (`WS2812B_5050`, `LED`, `ThingPlus_With_Connectors`, `LED_0603_1608Metric`,
   `OSHW_Logo_5mm`), none changed.
+- The Atlas Scientific Electrically Isolated EZO Carrier Board Gen 2 is now a mount, not
+  a connector. `KMLib_Connectors:Hole_Mounted_Conn_01x05_Female` and its footprint
+  `Hole_Mounted_24mmx34mm_PinHeader_1x05_P2.54mm_Vertical` are replaced by the pinless
+  symbol `KMLib_Sensors:Atlas_EZO_Carrier_Gen2_Mount` (reference `A`, not in the BOM) and
+  the footprint `KMLib_Boards_Modules:Atlas_EZO_Carrier_Gen2_Mount`; the old names are
+  gone. The carrier is screwed flat on its standoffs, and its right-angle header connects
+  by its own 5-wire Dupont cable, so nothing on the host sits under it. Put the five
+  signals on a stock 1x05 2.54 mm male header (`Conn_01x05_Pin`) beside the carrier's
+  pin edge. The old footprint also did not match the carrier: its four 4.0 mm holes
+  formed a skewed 33.96-33.99 x 24.65-24.81 mm quadrilateral. The new one, measured
+  from Atlas's STEP model, has four 3.2 mm NPTH on the carrier's 24.00 x 34.00 mm
+  rectangle (3.0 mm holes on the carrier, #4-40 hardware), with the origin at the
+  rectangle's centre. Fab and silk draw the 32 x 42 mm board, and fab also draws the
+  SMA overhang (-x) and the right-angle pin overhang (+x, VCC end marked). The courtyard
+  covers the board and both overhangs, with screw-head circles on `B.CrtYd`. The 3D
+  model moved to `Boards_Modules.3dshapes` and lands its holes on the NPTH. Only
+  Slice_PHDO (`feat/acar-2ch`, J3/J4, no layout yet) used the old parts.
 
 ### Fixed
 
-- `Hole_Mounted_24mmx34mm_PinHeader_1x05_P2.54mm_Vertical` in `KMLib_Connectors` now
-  matches the Atlas Scientific Electrically Isolated EZO Carrier Board Gen 2, measured
-  from Atlas's STEP model. The four mounting holes were 4.0 mm on a skewed 33.96-33.99 x
-  24.65-24.81 mm quadrilateral with the header 8.96 mm inside the near pair; they are
-  now 3.2 mm NPTH on the carrier's 24.00 x 34.00 mm rectangle (3.0 mm holes, #4-40
-  hardware), the pad 1-5 row (VCC, OFF, GND, TX/SDA, RX/SCL) 1.37 mm inside the near
-  pair and 0.53 mm off the rectangle's centre line. Fab and courtyard follow the
-  32 x 42 mm board plus the SMA and right-angle pin overhangs; screw-head courtyards on
-  `B.CrtYd`. The 3D model lands its header and standoff holes on the pads and holes.
-  Placed instances move on the next footprint update.
 - `1751066` (Phoenix Contact SPT 2,5/ 1-H-5,0) in `KMLib_Connectors`: the body outline was
   4.1 x 14.4 mm and sat 0.7 mm towards the wire entry; the part is 6.4 x 14.4 mm. Body,
   silk and courtyard now follow Phoenix's 3D model: the two solder pins of the potential
