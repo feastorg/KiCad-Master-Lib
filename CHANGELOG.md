@@ -64,6 +64,16 @@ grouped by dated development era rather than by version.
 
 ### Fixed
 
+- `Hole_Mounted_24mmx34mm_PinHeader_1x05_P2.54mm_Vertical` in `KMLib_Connectors` now
+  matches the Atlas Scientific Electrically Isolated EZO Carrier Board Gen 2, measured
+  from Atlas's STEP model. The four mounting holes were 4.0 mm on a skewed 33.96-33.99 x
+  24.65-24.81 mm quadrilateral with the header 8.96 mm inside the near pair; they are
+  now 3.2 mm NPTH on the carrier's 24.00 x 34.00 mm rectangle (3.0 mm holes, #4-40
+  hardware), the pad 1-5 row (VCC, OFF, GND, TX/SDA, RX/SCL) 1.37 mm inside the near
+  pair and 0.53 mm off the rectangle's centre line. Fab and courtyard follow the
+  32 x 42 mm board plus the SMA and right-angle pin overhangs; screw-head courtyards on
+  `B.CrtYd`. The 3D model lands its header and standoff holes on the pads and holes.
+  Placed instances move on the next footprint update.
 - `1751066` (Phoenix Contact SPT 2,5/ 1-H-5,0) in `KMLib_Connectors`: the body outline was
   4.1 x 14.4 mm and sat 0.7 mm towards the wire entry; the part is 6.4 x 14.4 mm. Body,
   silk and courtyard now follow Phoenix's 3D model: the two solder pins of the potential
