@@ -59,6 +59,13 @@ grouped by dated development era rather than by version.
 
 ### Fixed
 
+- `1751066` (Phoenix Contact SPT 2,5/ 1-H-5,0) in `KMLib_Connectors`: the body outline was
+  4.1 x 14.4 mm and sat 0.7 mm towards the wire entry; the part is 6.4 x 14.4 mm. Body,
+  silk and courtyard now follow Phoenix's 3D model: the two solder pins of the potential
+  on the body's long axis, 2.3 mm from one side, the wire-entry face 3.67 mm in front of
+  pad 1 and the back face 2.53 mm behind pad 2. Holes are 1.2 mm (Phoenix's figure, was
+  1.1) on 2.4 mm pads. The 3D model now lands its pins on the pad centres. Pad numbers
+  and positions are unchanged.
 - `Atlas_OEM` in `KMLib_Boards_Modules`: P6, P7, P8 and P11 sat 0.01-0.1 mm off the
   module's 0 / 12 mm pad columns (P6 at x -0.01, P7/P8 at 12.1, P11 at 11.9). They are on
   the grid now. 10-pin pH/EC/ORP modules sit on P1-P5 and P8-P12. The 12-pin RTD OEM does
