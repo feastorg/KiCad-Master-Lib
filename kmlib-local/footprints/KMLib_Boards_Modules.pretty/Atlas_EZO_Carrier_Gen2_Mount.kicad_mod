@@ -630,7 +630,7 @@
 	(embedded_fonts no)
 	(model "${KMLIB_LOCAL}/3dmodels/Boards_Modules.3dshapes/EZO_Carrier_Board_Electrically_Isolated.STEP"
 		(offset
-			(xyz 15.773 45.918 -15.127)
+			(xyz 15.773 45.918 -15.712)
 		)
 		(scale
 			(xyz 1 1 1)

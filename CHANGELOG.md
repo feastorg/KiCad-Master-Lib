@@ -77,7 +77,7 @@ grouped by dated development era rather than by version.
   SMA overhang (-x) and the right-angle pin overhang (+x, VCC end marked). The courtyard
   covers the board and both overhangs, with screw-head circles on `B.CrtYd`. The 3D
   model moved to `Boards_Modules.3dshapes` and lands its holes on the NPTH. Only
-  Slice_PHDO (`feat/acar-2ch`, J3/J4, no layout yet) used the old parts.
+  Slice_PHDO (an unpublished branch, J3/J4, no layout yet) used the old parts.
 
 ### Fixed
 
