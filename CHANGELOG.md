@@ -13,6 +13,11 @@ grouped by dated development era rather than by version.
 
 ### Added
 
+- `1990973` (Phoenix Contact SPT 2,5/ 2-H-5,0, 2-position push-in terminal block, 5 mm
+  pitch, 24 A, horizontal wire entry) in `KMLib_Connectors`, with its footprint. Same
+  geometry as `1751066`, one position wider: body 11.4 x 14.4 mm, two 1.2 mm solder pins
+  per potential 8.2 mm apart, both numbered with their potential (pads 1, 1, 2, 2). The
+  symbol has one pin per potential.
 - `PCIE-036-02-X-D-TH` (Samtec PCI Express x1 edge-card socket, 36 positions, 1.00 mm
   pitch, vertical, through-hole) in `KMLib_Connectors`, with its footprint
   `SAMTEC_PCIE-036-02-X-D-TH`. Slice_STPC referenced both but neither was in the library.
