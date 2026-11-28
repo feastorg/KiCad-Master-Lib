@@ -282,6 +282,139 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "Atlas_EZO_Carrier_Gen2_Mount"
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "A"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Atlas_EZO_Carrier_Gen2_Mount"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KMLib_Boards_Modules:Atlas_EZO_Carrier_Gen2_Mount"
+			(at 0 -8.89 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://files.atlas-scientific.com/electrically-isolated-ezo-carrier-board.pdf"
+			(at 0 -11.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting for the Atlas Scientific Electrically Isolated EZO Carrier Board Gen 2 (four #4-40 standoff holes, no pins). The carrier is bought separately and connects by its own 5-wire Dupont cable to a separate 1x05 2.54 mm male header (VCC, OFF, GND, TX/SDA, RX/SCL)."
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Atlas Scientific EZO carrier isolated mounting"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Atlas_EZO_Carrier_Gen2_Mount_0_1"
+			(rectangle
+				(start -6.35 3.81)
+				(end 6.35 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -5.08 2.54)
+				(radius 0.635)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 5.08 2.54)
+				(radius 0.635)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -5.08 -2.54)
+				(radius 0.635)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 5.08 -2.54)
+				(radius 0.635)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "EZO carrier"
+				(at 0 0.635 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(text "mount"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "DS3234S_RTC"
 		(exclude_from_sim no)
 		(in_bom yes)

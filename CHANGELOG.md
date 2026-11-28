@@ -73,6 +73,23 @@ grouped by dated development era rather than by version.
   outlines moved to `F.Fab`/`User.2`. Of the symbols and footprints the fleet uses
   (`WS2812B_5050`, `LED`, `ThingPlus_With_Connectors`, `LED_0603_1608Metric`,
   `OSHW_Logo_5mm`), none changed.
+- The Atlas Scientific Electrically Isolated EZO Carrier Board Gen 2 is now a mount, not
+  a connector. `KMLib_Connectors:Hole_Mounted_Conn_01x05_Female` and its footprint
+  `Hole_Mounted_24mmx34mm_PinHeader_1x05_P2.54mm_Vertical` are replaced by the pinless
+  symbol `KMLib_Sensors:Atlas_EZO_Carrier_Gen2_Mount` (reference `A`, not in the BOM) and
+  the footprint `KMLib_Boards_Modules:Atlas_EZO_Carrier_Gen2_Mount`; the old names are
+  gone. The carrier is screwed flat on its standoffs, and its right-angle header connects
+  by its own 5-wire Dupont cable, so nothing on the host sits under it. Put the five
+  signals on a stock 1x05 2.54 mm male header (`Conn_01x05_Pin`) beside the carrier's
+  pin edge. The old footprint also did not match the carrier: its four 4.0 mm holes
+  formed a skewed 33.96-33.99 x 24.65-24.81 mm quadrilateral. The new one, measured
+  from Atlas's STEP model, has four 3.2 mm NPTH on the carrier's 24.00 x 34.00 mm
+  rectangle (3.0 mm holes on the carrier, #4-40 hardware), with the origin at the
+  rectangle's centre. Fab and silk draw the 32 x 42 mm board, and fab also draws the
+  SMA overhang (-x) and the right-angle pin overhang (+x, VCC end marked). The courtyard
+  covers the board and both overhangs, with screw-head circles on `B.CrtYd`. The 3D
+  model moved to `Boards_Modules.3dshapes` and lands its holes on the NPTH. Only
+  Slice_PHDO (an unpublished branch, J3/J4, no layout yet) used the old parts.
 
 ### Fixed
 
