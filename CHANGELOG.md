@@ -13,6 +13,18 @@ grouped by dated development era rather than by version.
 
 ### Added
 
+- `BQ7791501PWR_Battery_Protector` (TI BQ77915, 3- to 5-series Li-ion primary protector
+  with low-side CHG/DSG drivers and cell balancing; the 01 variant trips OV at 4.25 V and
+  UV at 2.8 V) in `KMLib_IC_Power`, for the Slice_SOLR cell protection. Pins follow TI
+  SLUSCU0L Table 7-1, in package order. The footprint is KiCad's stock
+  `TSSOP-24_4.4x7.8mm_P0.65mm`: 1.475 x 0.4 mm pads on 5.725 mm centres, against TI's
+  PW0024A example of 1.5 x 0.45 mm on 5.8 mm (SLUSCU0L p.54), which TI notes IPC-7351
+  may vary.
+- `R_1206_Vishay_WSLP_6mR-50mR` and `R_1206_Vishay_WSLP_2mR-5m9R` in `KMLib_Passives_SMD`:
+  Vishay WSLP1206 Power Metal Strip current-sense land patterns. Vishay recommends
+  different pads by resistance (doc 30122, Dimensions table): 1.65 x 1.93 mm pads 1.80 mm
+  apart for 6-50 mOhm, 1.78 x 1.93 mm pads 1.55 mm apart for 2-5.9 mOhm. KiCad's stock
+  1206 pads are 1.125 x 1.75 mm. Body, fab outline and 3D model are the stock 1206's.
 - `1990973` (Phoenix Contact SPT 2,5/ 2-H-5,0, 2-position push-in terminal block, 5 mm
   pitch, 24 A, horizontal wire entry) in `KMLib_Connectors`, with its footprint. Same
   geometry as `1751066`, one position wider: body 11.4 x 14.4 mm, two 1.2 mm solder pins
