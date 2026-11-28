@@ -1909,7 +1909,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KMLib_IC_SMD:RVA16_2P14X2P14"
+		(property "Footprint" "Package_DFN_QFN:Texas_RVA_VQFN-16-1EP_3.5x3.5mm_P0.5mm_EP2.14x2.14mm_ThermalVias"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1955,7 +1955,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "RVA16_2P14X2P14"
+		(property "ki_fp_filters" "Texas*RVA*VQFN*16*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

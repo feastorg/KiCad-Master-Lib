@@ -76,6 +76,19 @@ grouped by dated development era rather than by version.
 
 ### Fixed
 
+- `POWERPAK_SO-8_DUAL_VIS` (SI7288DP) in `KMLib_IC_SMD`: the two drain paddles were
+  net-less `fp_poly` copper, not pads, so a placed part showed shorting, clearance and
+  solder-mask-bridge errors against its own drain pins and the paddles could take no net.
+  Rebuilt from KiCad's stock `PowerPAK_SO-8_Dual` with Vishay's numbering (1 S1, 2 G1,
+  3 S2, 4 G2, 5-6 D2, 7-8 D1; the D1 paddle is pad 7, the D2 paddle pad 6) and Vishay's
+  2024 land pattern (doc 72600 Rev A): paddles 3.81 x 1.625 mm, 0.66 mm apart, where the
+  stock footprint has 1.65 mm and 0.61 mm.
+- `BQ24650RVAT_Charger_Controller` in `KMLib_IC_Power` now uses KiCad's stock
+  `Texas_RVA_VQFN-16-1EP_3.5x3.5mm_P0.5mm_EP2.14x2.14mm_ThermalVias`. The KMLib
+  `RVA16_2P14X2P14` put thermal pad 17 on F.Cu alone (no mask opening, no paste: the pad
+  could not be soldered), named its four vias `V` so they took no net, and typed an
+  SMD footprint with through-hole pads.
+
 - `1751066` (Phoenix Contact SPT 2,5/ 1-H-5,0) in `KMLib_Connectors`: the body outline was
   4.1 x 14.4 mm and sat 0.7 mm towards the wire entry; the part is 6.4 x 14.4 mm. Body,
   silk and courtyard now follow Phoenix's 3D model: the two solder pins of the potential
@@ -123,6 +136,9 @@ grouped by dated development era rather than by version.
 
 ### Removed
 
+- `RVA16_2P14X2P14`, `POWERPAK_SO-8_DUAL_VIS-L`, `POWERPAK_SO-8_DUAL_VIS-M` and their
+  models `BQ24650RVAT.stp`, `POWERPAK_SO-8_DUAL_VIS.step` from `KMLib_IC_SMD`: superseded
+  above, and no symbol or board in the fleet used the density variants.
 - **Git LFS.** `.gitattributes` tracked `*.step` and `*.stl` through LFS, but only 14 files
   (22.6 MB) were ever stored that way — `*.stp` and `*.wrl` were not tracked, and neither
   were the vendored 3D models. Any clone without `git-lfs` installed silently received
